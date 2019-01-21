@@ -14,24 +14,26 @@ author: Amit Joshi
 email: amit.joshiusa@gmail.com
 '''
 class TensorflowModel():
-	default_lr = 0.0005
-	default_EPOCHS = 1000
-	default_BATCH_SIZE = 100
+	default_lr = 0.00005
+	default_EPOCHS = 2000
+	default_BATCH_SIZE = 50
 	numHiddenLayerNodes = 20
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
 	default_split_ratio = 1
-	default_rseed = 724
+	default_rseed = 2724
 
 	default_standard_deviation = .1
-	default_bias_initialization_constant = 0.1
+	default_bias_initialization_constant = 0.3
 	
 	#default_layer_structure = [26, 20, 5, 40, 30, 50, 1]
-	default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numOutputLayerNodes]
-	default_dropout_structure = [False, True, True, True, True, False]
+	#default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numOutputLayerNodes]
+	#default_dropout_structure = [False, True, True, True, True, False]
 	#default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes*2, numHiddenLayerNodes, numOutputLayerNodes]
-	#default_dropout_structure = [False, True, True, False]
-	#default_layer_structure = [24, 20, 10, 1]
+	default_dropout_structure = [False, True, True, False]
+	default_layer_structure = [26, 20, 20, 1]
+	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
+	#default_layer_structure = [26, 25, 25, 25, 25, 25, 25, 25, 25, 1]
 	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, dropoutStructure = default_dropout_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, use_dropout = True):
 		tf.reset_default_graph()
 		
@@ -278,7 +280,7 @@ class TensorflowModel():
 		regularization_penalty = tf.contrib.layers.apply_regularization(l1_regularizer, weights)
 
 
-		gd_step = tf.train.AdamOptimizer(self.lr).minimize(cross_entropy)
+		gd_step = tf.train.AdamOptimizer(self.lr).minimize(cross_entropy + regularization_penalty)
 
 		init = tf.global_variables_initializer()
 		newypred = tf.round(y_pred)
@@ -466,13 +468,13 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "training_dataset.csv", use_dropout = False)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_training_dataset.csv", use_dropout = False)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
 features, labels = model.getFeaturesAndLabelsFromCSV(28);
 model.trainModel(features, labels)
 
-testFeatures = model.getFeaturesFromCSV(csvFileName = "test_dataset.csv")
+testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_test_dataset.csv")
 model2 = TensorflowModel()
 model2.restoreModel("./finalModelFolder/tensorflowmodel.ckpt")
 model2.executeModel(testFeatures, outputFileName = "submission.csv")
