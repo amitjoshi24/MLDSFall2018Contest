@@ -11,9 +11,9 @@ Id,Expected
 9,poetry
 10,prose
 11,prose
-12,prose
+12,poetry
 13,prose
-14,prose
+14,poetry
 15,prose
 16,poetry
 17,poetry
@@ -42,8 +42,8 @@ Id,Expected
 40,poetry
 41,poetry
 42,prose
-43,prose
-44,prose
+43,poetry
+44,poetry
 45,poetry
 46,poetry
 47,prose
@@ -103,7 +103,7 @@ Id,Expected
 101,prose
 102,prose
 103,prose
-104,prose
+104,poetry
 105,prose
 106,prose
 107,prose
@@ -113,7 +113,7 @@ Id,Expected
 111,prose
 112,prose
 113,prose
-114,poetry
+114,prose
 115,prose
 116,prose
 117,prose

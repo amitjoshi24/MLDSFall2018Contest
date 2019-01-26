@@ -41,6 +41,12 @@ class DataCleaner():
 
 		features = newFeatures
 
+
+		print (len(features[0]))
+
+
+		print ("length of testFeatures: " + str(len(features)))
+
 		columns = list()
 
 		for i in range(len(features[0])):
@@ -57,20 +63,20 @@ class DataCleaner():
 		maxArray = [0] * len(columns)
 		for i in range(len(columns)):
 			col = columns[i]
-			print (col)
+			#print (col)
 			meanArray[i] = np.mean(col);
 			standardDeviationArray[i] = np.std(col)
 			minArray[i] = min(col)
 			maxArray[i] = max(col)
-			print (meanArray[i])
-			print (standardDeviationArray[i])
-			print ("\n\n\n\n")
+			#print (meanArray[i])
+			#print (standardDeviationArray[i])
+			#print ("\n\n\n\n")
 
-		print ("len(features[0]): " + str(len(features[0])))
-		print ("len(columns): " + str(len(columns)))
-		print (meanArray)
-		print ("-----")
-		print (standardDeviationArray)
+		#print ("len(features[0]): " + str(len(features[0])))
+		#print ("len(columns): " + str(len(columns)))
+		#print (meanArray)
+		#print ("-----")
+		#print (standardDeviationArray)
 		for feature in features:
 			for i in range(len(feature)):
 				#feature[i] = float(feature[i] - minArray[i])/float(maxArray[i] - minArray[i])
@@ -81,7 +87,7 @@ class DataCleaner():
 
 		features = np.asarray(features)
 		print ("--------------------Features retrieved-----------------------")
-		print(features)
+		#print(features)
 		print ("--------------------Features Printed-----------------------")
 
 		f = open(outputFileName, 'w')
@@ -103,6 +109,7 @@ class DataCleaner():
 		else:
 			self.csvFileName = csvFileName
 
+
 		with open(csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
@@ -115,7 +122,9 @@ class DataCleaner():
 				#features.append(row[0:labelCol-1])
 				#features.append(row[0:labelCol-1])
 
-				features.append(row[1:labelCol-1])
+				newFeature = row[1:labelCol-1]
+				features.append(newFeature)
+
 				if(row[labelCol] == "prose"):
 					labels.append([0])
 				else:
@@ -127,6 +136,7 @@ class DataCleaner():
 			newFeatures.append(feature)
 
 		features = newFeatures
+		print ("length of features: " + str(len(features)))
 
 		columns = list()
 
@@ -142,18 +152,18 @@ class DataCleaner():
 		standardDeviationArray = [0] * len(columns);
 		for i in range(len(columns)):
 			col = columns[i]
-			print (col)
+			#print (col)
 			meanArray[i] = np.mean(col);
 			standardDeviationArray[i] = np.std(col)
-			print (meanArray[i])
-			print (standardDeviationArray[i])
-			print ("\n\n\n\n")
+			#print (meanArray[i])
+			#print (standardDeviationArray[i])
+			#print ("\n\n\n\n")
 
-		print ("len(features[0]): " + str(len(features[0])))
-		print ("len(columns): " + str(len(columns)))
-		print (meanArray)
-		print ("-----")
-		print (standardDeviationArray)
+		#print ("len(features[0]): " + str(len(features[0])))
+		#print ("len(columns): " + str(len(columns)))
+		#print (meanArray)
+		#print ("-----")
+		#print (standardDeviationArray)
 		for feature in features:
 			for i in range(len(feature)):
 				feature[i] = float(feature[i] - meanArray[i])/float(standardDeviationArray[i])
@@ -181,8 +191,14 @@ class DataCleaner():
 				f.write("prose")
 			f.write("\n")
 
-dataCleaner = DataCleaner("training_dataset.csv");
+'''dataCleaner = DataCleaner("training_dataset.csv");
 dataCleaner.cleanData(labelCol = 28, outputFileName = "clean_training_dataset.csv")
 
 dataCleaner = DataCleaner("test_dataset.csv");
-dataCleaner.cleanTestData(labelCol = 28, outputFileName = "clean_test_dataset.csv")
+dataCleaner.cleanTestData(labelCol = 28, outputFileName = "clean_test_dataset.csv")'''
+
+dataCleaner = DataCleaner("extra_training_dataset.csv");
+dataCleaner.cleanData(labelCol = 334, outputFileName = "clean_extra_training_dataset.csv")
+
+dataCleaner = DataCleaner("extra_test_dataset.csv");
+dataCleaner.cleanTestData(labelCol = 334, outputFileName = "clean_extra_test_dataset.csv")

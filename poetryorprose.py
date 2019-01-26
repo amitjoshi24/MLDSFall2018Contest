@@ -14,9 +14,9 @@ author: Amit Joshi
 email: amit.joshiusa@gmail.com
 '''
 class TensorflowModel():
-	default_lr = 0.00005
-	default_EPOCHS = 2000
-	default_BATCH_SIZE = 50
+	default_lr = 0.000005
+	default_EPOCHS = 3000
+	default_BATCH_SIZE = 20
 	numHiddenLayerNodes = 20
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
@@ -30,8 +30,19 @@ class TensorflowModel():
 	#default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numOutputLayerNodes]
 	#default_dropout_structure = [False, True, True, True, True, False]
 	#default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes*2, numHiddenLayerNodes, numOutputLayerNodes]
-	default_dropout_structure = [False, True, True, False]
-	default_layer_structure = [26, 20, 20, 1]
+	
+	#achieved 91.525 test accuracy with below structure
+	#default_dropout_structure = [False, True, True, False]
+	#default_layer_structure = [26, 20, 20, 1]
+	
+	#structure with extra features added on
+	#default_dropout_structure = [False, False, False, False, False, False]
+	#default_layer_structure = [2333, 1200, 500, 200, 100, 1]
+
+
+	default_dropout_structure = [False, False, False, False, False, False]
+	default_layer_structure = [332, 150, 75, 25, 10, 1]
+
 	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
 	#default_layer_structure = [26, 25, 25, 25, 25, 25, 25, 25, 25, 1]
 	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, dropoutStructure = default_dropout_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, use_dropout = True):
@@ -468,13 +479,13 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_training_dataset.csv", use_dropout = False)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = False)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(28);
+features, labels = model.getFeaturesAndLabelsFromCSV(334);
 model.trainModel(features, labels)
 
-testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_test_dataset.csv")
+testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
 model2 = TensorflowModel()
 model2.restoreModel("./finalModelFolder/tensorflowmodel.ckpt")
 model2.executeModel(testFeatures, outputFileName = "submission.csv")
