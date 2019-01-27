@@ -15,7 +15,7 @@ email: amit.joshiusa@gmail.com
 '''
 class TensorflowModel():
 	default_lr = 0.000005
-	default_EPOCHS = 3000
+	default_EPOCHS = 10000
 	default_BATCH_SIZE = 20
 	numHiddenLayerNodes = 20
 	numInputLayerNodes = 26
@@ -285,7 +285,10 @@ class TensorflowModel():
 		#cross_entropy = tf.reduce_mean(tf.square(y_pred - self.y_true))
 		#cross_entropy = y_pred - self.y_true
 		cross_entropy = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits = y_pred, labels = self.y_true))
-		l1_regularizer = tf.contrib.layers.l1_regularizer(scale=0.001, scope=None)
+		#l1_regularizer = tf.contrib.layers.l1_regularizer(scale=0.0007, scope=None)
+		#l1_regularizer = tf.contrib.layers.l2_regularizer(scale = 0.001, scope=None)
+
+		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.0001, scale_l2 = 0.06, scope = None)
 		weights = tf.trainable_variables() # all vars of your graph
 
 		regularization_penalty = tf.contrib.layers.apply_regularization(l1_regularizer, weights)

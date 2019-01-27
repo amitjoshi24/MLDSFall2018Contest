@@ -166,7 +166,10 @@ class DataCleaner():
 		#print (standardDeviationArray)
 		for feature in features:
 			for i in range(len(feature)):
-				feature[i] = float(feature[i] - meanArray[i])/float(standardDeviationArray[i])
+				if(standardDeviationArray[i] == 0):
+					feature[i] = meanArray[i]
+				else:
+					feature[i] = float(feature[i] - meanArray[i])/float(standardDeviationArray[i])
 
 
 
