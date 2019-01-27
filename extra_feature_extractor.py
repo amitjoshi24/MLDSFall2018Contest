@@ -89,7 +89,7 @@ class ExtraFeatureExtractor():
 		print ("just printed length of both features and testFeatures")
 		#now, it is time to add on to features
 
-		tfidf = TfidfVectorizer(min_df = 0.25, max_df = 0.75, ngram_range = (2, 3))
+		tfidf = TfidfVectorizer(min_df = 0.15, max_df = 0.85, ngram_range = (2, 3))
 
 		extraFeatures = tfidf.fit_transform(rawTexts)
 

@@ -201,7 +201,7 @@ dataCleaner = DataCleaner("test_dataset.csv");
 dataCleaner.cleanTestData(labelCol = 28, outputFileName = "clean_test_dataset.csv")'''
 
 dataCleaner = DataCleaner("extra_training_dataset.csv");
-dataCleaner.cleanData(labelCol = 334, outputFileName = "clean_extra_training_dataset.csv")
+dataCleaner.cleanData(labelCol = 953, outputFileName = "clean_extra_training_dataset.csv")
 
 dataCleaner = DataCleaner("extra_test_dataset.csv");
-dataCleaner.cleanTestData(labelCol = 334, outputFileName = "clean_extra_test_dataset.csv")
+dataCleaner.cleanTestData(labelCol = 953, outputFileName = "clean_extra_test_dataset.csv")
