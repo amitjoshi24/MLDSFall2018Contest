@@ -20,11 +20,11 @@ class TensorflowModel():
 	numHiddenLayerNodes = 20
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
-	default_split_ratio = 1
+	default_split_ratio = 1.0
 	default_rseed = 2724
 
-	default_standard_deviation = .1
-	default_bias_initialization_constant = 0.3
+	default_standard_deviation = 0.1
+	default_bias_initialization_constant = .1
 	
 	#default_layer_structure = [26, 20, 5, 40, 30, 50, 1]
 	#default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numOutputLayerNodes]
@@ -43,9 +43,15 @@ class TensorflowModel():
 	#default_dropout_structure = [False, False, False, False, False, False]
 	#default_layer_structure = [332, 150, 75, 25, 10, 1]
 
-	default_dropout_structure = [False, False, False, False, False, False, False]
-	default_layer_structure = [951, 600, 200, 75, 40, 20, 1]
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [951, 600, 200, 75, 40, 20, 1]
 
+	default_dropout_structure = [False, False, False, False, False, False, False]
+	default_layer_structure = [841, 500, 200, 100, 40, 20, 1]
+
+	#default_dropout_structure = [False, False, False, False]
+	#default_layer_structure = [841, 300, 150, 50, 1]
+	
 	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
 	#default_layer_structure = [26, 25, 25, 25, 25, 25, 25, 25, 25, 1]
 	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, dropoutStructure = default_dropout_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, use_dropout = True):
@@ -291,7 +297,7 @@ class TensorflowModel():
 		#l1_regularizer = tf.contrib.layers.l1_regularizer(scale=0.0007, scope=None)
 		#l1_regularizer = tf.contrib.layers.l2_regularizer(scale = 0.001, scope=None)
 
-		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.0001, scale_l2 = 0.05, scope = None)
+		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.00001, scale_l2 = 0.045, scope = None)
 		weights = tf.trainable_variables() # all vars of your graph
 
 		regularization_penalty = tf.contrib.layers.apply_regularization(l1_regularizer, weights)
@@ -488,7 +494,7 @@ class TensorflowModel():
 model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = False)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(953);
+features, labels = model.getFeaturesAndLabelsFromCSV(843);
 model.trainModel(features, labels)
 
 testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")

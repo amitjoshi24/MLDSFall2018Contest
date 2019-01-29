@@ -80,7 +80,11 @@ class DataCleaner():
 		for feature in features:
 			for i in range(len(feature)):
 				#feature[i] = float(feature[i] - minArray[i])/float(maxArray[i] - minArray[i])
-				feature[i] = float(feature[i] - meanArray[i])/float(standardDeviationArray[i])
+				if(standardDeviationArray[i] == 0):
+					feature[i] = meanArray[i]
+				else:
+					feature[i] = float(feature[i] - meanArray[i])/float(standardDeviationArray[i])
+
 				#feature[i] *= 2
 				#feature[i] -= 1
 
@@ -201,7 +205,7 @@ dataCleaner = DataCleaner("test_dataset.csv");
 dataCleaner.cleanTestData(labelCol = 28, outputFileName = "clean_test_dataset.csv")'''
 
 dataCleaner = DataCleaner("extra_training_dataset.csv");
-dataCleaner.cleanData(labelCol = 953, outputFileName = "clean_extra_training_dataset.csv")
+dataCleaner.cleanData(labelCol = 843, outputFileName = "clean_extra_training_dataset.csv")
 
 dataCleaner = DataCleaner("extra_test_dataset.csv");
-dataCleaner.cleanTestData(labelCol = 953, outputFileName = "clean_extra_test_dataset.csv")
+dataCleaner.cleanTestData(labelCol = 843, outputFileName = "clean_extra_test_dataset.csv")

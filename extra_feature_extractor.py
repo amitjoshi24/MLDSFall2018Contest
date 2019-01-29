@@ -20,6 +20,7 @@ class ExtraFeatureExtractor():
 		labels = list()
 		features = list()
 		rawTexts = list()
+		testRawTexts = list()
 		testFeatures = list()
 
 
@@ -72,7 +73,7 @@ class ExtraFeatureExtractor():
 
 				newFeature = row[1:labelCol-1]
 				
-				rawTexts.append(row[labelCol-1]) #happens to be the raw text column
+				testRawTexts.append(row[labelCol-1]) #happens to be the raw text column
 
 				testFeatures.append(newFeature)	
 
@@ -86,10 +87,11 @@ class ExtraFeatureExtractor():
 		print (len(features))
 		print (len(testFeatures))
 		print (len(rawTexts))
+		print (len(testRawTexts))
 		print ("just printed length of both features and testFeatures")
 		#now, it is time to add on to features
 
-		tfidf = TfidfVectorizer(min_df = 0.15, max_df = 0.85, ngram_range = (2, 3))
+		tfidf = TfidfVectorizer(min_df = 0.15, max_df = 0.85, ngram_range = (2, 4))
 
 		extraFeatures = tfidf.fit_transform(rawTexts)
 
@@ -102,9 +104,20 @@ class ExtraFeatureExtractor():
 				print ("adding to train: " + str(counter))
 				features[counter].extend(toAdd)
 			else:
-				print ("adding to test: " + str(counter))
-				testFeatures[counter - trainLength].extend(toAdd)
+				print ("HORRIBLE ERROR")
 			counter += 1
+
+		extraTestFeatures = tfidf.transform(testRawTexts)
+
+		testDensed = extraTestFeatures.todense()
+
+		counter = 0
+		for newFeature in testDensed:
+			toAdd = np.array(newFeature)[0].tolist()
+			print ("adding to test:")
+			testFeatures[counter].extend(toAdd)
+			counter += 1
+
 		print (len(features[0]))
 
 
