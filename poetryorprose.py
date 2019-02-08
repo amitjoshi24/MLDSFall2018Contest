@@ -17,7 +17,7 @@ class TensorflowModel():
 	default_lr = 0.000005
 	default_EPOCHS = 4000
 	default_BATCH_SIZE = 20
-	numHiddenLayerNodes = 20
+	numHiddenLayerNodes = 50
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
 	default_split_ratio = 1.0
@@ -46,15 +46,27 @@ class TensorflowModel():
 	#default_dropout_structure = [False, False, False, False, False, False, False]
 	#default_layer_structure = [951, 600, 200, 75, 40, 20, 1]
 
-	default_dropout_structure = [False, False, False, False, False, False, False]
-	default_layer_structure = [841, 500, 200, 100, 40, 20, 1]
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [848, 1]
 
+	default_dropout_structure = [False, False, False, False, False, False, False]
+	default_layer_structure = [848, 500, 200, 100, 40, 20, 1]
+
+	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
+	#default_layer_structure = [848, 565, 379, 271, 167, 112, 74, 50, 30, 1]
+
+	#default_dropout_structure = [False, False, False, False, False, False]
+	#default_layer_structure = [848, 400, 150, 75, 30, 1]
+	
+	#default_layer_structure = [841, 300, 100, 30, 1]
+	#default_dropout_structure = [False, False, False, False]
+	
 	#default_dropout_structure = [False, False, False, False]
 	#default_layer_structure = [841, 300, 150, 50, 1]
 	
 	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
 	#default_layer_structure = [26, 25, 25, 25, 25, 25, 25, 25, 25, 1]
-	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, dropoutStructure = default_dropout_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, use_dropout = True):
+	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, dropoutStructure = default_dropout_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, use_dropout = False):
 		tf.reset_default_graph()
 		
 		self.totalEntries = totalEntries
@@ -275,19 +287,22 @@ class TensorflowModel():
 
 		trainingSize = len(trainingData[1])
 		hidden_out = self.x
+
 		for i in range(len(self.layers)-1):
 			if i == len(self.layers)-2: #if it's the output layer, I'm using sigmoid activation
 				hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
 				hidden_out = tf.nn.sigmoid(hidden_out)
 			else:
-				if self.dropoutStructure[i] == True and self.use_dropout == True and self.testing == 0:
-					print("hereeee")
+				if self.dropoutStructure[i+1] == True and self.use_dropout == True:
 					hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
 					hidden_out = tf.nn.dropout(hidden_out, keep_prob = 0.5)
 					hidden_out = tf.nn.relu(hidden_out)
 				else:
 					hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
+					#batch_mean, batch_var = tf.nn.moments(hidden_out, [0])
+					#hidden_out = tf.nn.batch_normalization(hidden_out, mean = batch_mean, variance = batch_var, offset = 0, scale = 1, variance_epsilon = 1e-3)
 					hidden_out = tf.nn.relu(hidden_out)
+
 		y_pred = hidden_out
 
 
@@ -297,7 +312,8 @@ class TensorflowModel():
 		#l1_regularizer = tf.contrib.layers.l1_regularizer(scale=0.0007, scope=None)
 		#l1_regularizer = tf.contrib.layers.l2_regularizer(scale = 0.001, scope=None)
 
-		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.00001, scale_l2 = 0.045, scope = None)
+		
+		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.0001, scale_l2 = 0.045, scope = None)
 		weights = tf.trainable_variables() # all vars of your graph
 
 		regularization_penalty = tf.contrib.layers.apply_regularization(l1_regularizer, weights)
@@ -334,7 +350,9 @@ class TensorflowModel():
 				trainLabels = trainingData[1]
 				trainFeatures, trainLabels = self.unison_shuffled_copies(trainFeatures, trainLabels, self.rseed)
 				trainingData = (trainFeatures, trainLabels)
-				while totalCounter <= trainingSize:
+				realCounter = 0
+				while totalCounter < trainingSize:
+
 					batch_xs, batch_ys, counter = self.getBatch(trainingData, counter)
 					counter += self.BATCH_SIZE
 					totalCounter += self.BATCH_SIZE
@@ -452,9 +470,11 @@ class TensorflowModel():
 			else:
 				hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
 				#hidden_out = tf.nn.sigmoid(hidden_out) + tf.constant(1.0, dtype = tf.float32)
+				#batch_mean, batch_var = tf.nn.moments(hidden_out, [0])
+				#hidden_out = tf.nn.batch_normalization(hidden_out, mean = batch_mean, variance = batch_var, offset = 0, scale = 1, variance_epsilon = 1e-3)
 				hidden_out = tf.nn.relu(hidden_out)
 				#hidden_out = tf.add(tf.matmul(hidden_out, weightMat[i]), 0)
-				#hidden_out = tf.divide(hidden_out, tf.constant(10, dtype = tf.float32))
+				#hidden_out = tf.divide(hidden_out, tf.constant(10, dtype = tf.float32)
 
 		y_pred = hidden_out
 		newy_pred = tf.round(y_pred)
@@ -491,10 +511,10 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = False)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = True)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(843);
+features, labels = model.getFeaturesAndLabelsFromCSV(850);
 model.trainModel(features, labels)
 
 testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")

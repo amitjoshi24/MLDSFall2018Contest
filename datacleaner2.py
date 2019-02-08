@@ -8,7 +8,7 @@ import os, shutil
 import csv
 import sys
 csv.field_size_limit(sys.maxsize)
-class DataCleaner():
+class DataCleaner2():
 	def __init__(self, csvFileName):
 		self.csvFileName = csvFileName;
 
@@ -204,8 +204,11 @@ dataCleaner.cleanData(labelCol = 28, outputFileName = "clean_training_dataset.cs
 dataCleaner = DataCleaner("test_dataset.csv");
 dataCleaner.cleanTestData(labelCol = 28, outputFileName = "clean_test_dataset.csv")'''
 
-dataCleaner = DataCleaner("extra_training_dataset.csv");
-dataCleaner.cleanData(labelCol = 850, outputFileName = "clean_extra_training_dataset.csv")
+dataCleaner = DataCleaner2("denoised_clean_extra_training_dataset.csv");
+dataCleaner.cleanData(labelCol = 850, outputFileName = "clean_denoised_clean_extra_training_dataset.csv")
 
-dataCleaner = DataCleaner("extra_test_dataset.csv");
-dataCleaner.cleanTestData(labelCol = 850, outputFileName = "clean_extra_test_dataset.csv")
+dataCleaner = DataCleaner2("denoised_clean_extra_test_dataset.csv");
+dataCleaner.cleanTestData(labelCol = 850, outputFileName = "clean_denoised_clean_extra_test_dataset.csv")
+
+#dataCleaner = DataCleaner("extra_test_dataset.csv");
+#dataCleaner.cleanTestData(labelCol = 334, outputFileName = "clean_extra_test_dataset.csv")

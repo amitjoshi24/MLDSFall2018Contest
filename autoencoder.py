@@ -9,30 +9,36 @@ import csv
 import sys
 csv.field_size_limit(sys.maxsize)
 
+print("gpu")
+tf.test.gpu_device_name()
+print ("donegpu")
+
 '''
 author: Amit Joshi
 email: amit.joshiusa@gmail.com
 '''
 class AutoEncoder():
-	default_lr = 0.0005
-	default_EPOCHS = 200000
-	default_BATCH_SIZE = 1000
-	numHiddenLayerNodes = 25
-	numInputLayerNodes = 26
+	default_lr = 0.00001
+	default_EPOCHS = 4000
+	default_BATCH_SIZE = 469
+	numHiddenLayerNodes = 475
+	numInputLayerNodes = 848
 	numOutputLayerNodes = 1
 	default_split_ratio = 1
 	default_rseed = 724
 
-	default_standard_deviation = .1
-	default_bias_initialization_constant = 0.01
+	default_standard_deviation = .01
+	default_mean = 0
+	default_bias_initialization_constant = 0.0
 	
-	default_layer_structure = [numInputLayerNodes, numHiddenLayerNodes, numHiddenLayerNodes, numInputLayerNodes]
-	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant):
+	default_layer_structure = [numInputLayerNodes, 650, numInputLayerNodes]
+	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, default_mean = default_mean):
 		tf.reset_default_graph()
 		self.totalEntries = totalEntries
 		self.layers = layerStructure
 		self.rseed = rseed
 		self.modelName = modelName
+		self.mean = default_mean
 		self.bias_initialization_constant = bias_initialization_constant
 		self.standard_deviation = standard_deviation
 		self.x = tf.placeholder(tf.float32, shape = [None, self.layers[0]], name = 'x')
@@ -54,7 +60,7 @@ class AutoEncoder():
 		for i in range(len(self.layers)-1):
 			weightLayerName = "weight" + str(i)
 			biasLayerName = "bias" + str(i)
-			self.weightMat.append(tf.Variable(tf.random_normal([self.layers[i], self.layers[i+1]], stddev = self.standard_deviation), name = weightLayerName, dtype = tf.float32))
+			self.weightMat.append(tf.Variable(tf.random_normal([self.layers[i], self.layers[i+1]], stddev = self.standard_deviation, mean = self.mean), name = weightLayerName, dtype = tf.float32))
 			self.biasMat.append(tf.Variable(tf.constant(self.bias_initialization_constant, shape = [self.layers[i+1]]), name = biasLayerName, dtype = tf.float32)) 
 		
 
@@ -166,7 +172,7 @@ class AutoEncoder():
 		print(features)
 		print ("--------------------Features Printed-----------------------")
 
-		features, labels = self.unison_shuffled_copies(features, labels, self.rseed)
+		#features, labels = self.unison_shuffled_copies(features, labels, self.rseed)
 		return features, labels
 
 	def _get_beta_accumulators(self):
@@ -198,14 +204,17 @@ class AutoEncoder():
 		hidden_out = self.x
 		for i in range(len(self.layers)-1):
 			hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
-			#hidden_out = tf.nn.relu(hidden_out)
+			if i < len(self.layers)-1:
+				#hidden_out = tf.nn.sigmoid(hidden_out)
+				fakeVar = 1
+
 		y_pred = hidden_out
 
 
 		#cross_entropy = tf.reduce_mean(self.findCost(y_pred, self.y_true, 0))
 		#cross_entropy = tf.reduce_mean(tf.nn.sigmoid_cross_entropy_with_logits(logits = y_pred, labels = self.y_true))
 		cross_entropy = tf.reduce_sum(tf.square(y_pred - self.y_true))
-		gd_step = tf.train.AdamOptimizer(self.lr).minimize(cross_entropy)
+		gd_step = tf.train.GradientDescentOptimizer(self.lr).minimize(cross_entropy)
 
 		init = tf.global_variables_initializer()
 		newypred = tf.round(y_pred)
@@ -229,7 +238,7 @@ class AutoEncoder():
 				trainLabels = trainingData[1]
 				trainFeatures, trainLabels = self.unison_shuffled_copies(trainFeatures, trainLabels, self.rseed)
 				trainingData = (trainFeatures, trainLabels)
-				while totalCounter <= trainingSize:
+				while totalCounter < trainingSize:
 					batch_xs, batch_ys, counter = self.getBatch(trainingData, counter)
 					counter += self.BATCH_SIZE
 					totalCounter += self.BATCH_SIZE
@@ -275,7 +284,10 @@ class AutoEncoder():
 		hidden_out = self.x
 		for i in range(len(self.layers)-1):
 			hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
-			hidden_out = tf.nn.relu(hidden_out)
+			if i < len(self.layers) - 1:
+				#hidden_out = tf.nn.sigmoid(hidden_out)
+				fakeVar = 1
+			#hidden_out = tf.nn.relu(hidden_out)
 
 		y_pred = hidden_out
 		newy_pred = tf.round(y_pred)
@@ -287,32 +299,43 @@ class AutoEncoder():
 			restorer.restore(sess, self.restoredModelName)
 			#sess.run(tf.local_variables_initializer())
 			newypred, ypred = sess.run([newy_pred, y_pred], feed_dict = {self.x: features})
+
+
 			print ("Test cases: " + str(features) + "\n")
+
 			decodedFeatures = list()
 			for i in range(len(newypred)):
 				decodedFeatures.append(ypred[i])
 
 			f = open(outputFileName, 'w')
-			f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+			if labels is not None:
+				f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+			else:
+				f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text\n")
 			for i in range(len(decodedFeatures)):
 				print (i)
 				f.write(str(i) + ",")
 				for j in range(0, len(decodedFeatures[i])):
 					f.write(str(decodedFeatures[i][j]) + ",")
 				f.write("fakeText,")
-				if(labels[i][0] == 1):
-					f.write("poetry")
-				else:
-					f.write("prose")
+				if labels is not None:
+					if(labels[i][0] == 1):
+						f.write("poetry")
+					else:
+						f.write("prose")
 				f.write("\n")
 
 			f.close()
 
-autoencoder = AutoEncoder(modelName = "./autoencoder.ckpt", csvFileName = "clean_training_dataset.csv")
+autoencoder = AutoEncoder(modelName = "./autoencoder.ckpt", csvFileName = "clean_extra_training_dataset.csv")
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = autoencoder.getFeaturesAndLabelsFromCSV(28);
-autoencoder.trainModel(features, labels)
+features, labels = autoencoder.getFeaturesAndLabelsFromCSV(850);
+autoencoder.trainModel(features = features, labels = labels)
+testFeatures = autoencoder.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
+autoencoder2 = AutoEncoder(modelName = "./autoencoder2.ckpt", csvFileName = None)
 
-autoencoder.executeModel(features, labels, "decoded_training_dataset.csv")
+autoencoder2.restoreModel("./autoencoder.ckpt")
+autoencoder2.executeModel(features = features, labels = labels, outputFileName = "denoised_clean_extra_training_dataset.csv")
 
+autoencoder2.executeModel(features = testFeatures, labels = None, outputFileName = "denoised_clean_extra_test_dataset.csv")
