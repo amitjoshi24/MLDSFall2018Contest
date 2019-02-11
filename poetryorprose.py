@@ -7,6 +7,7 @@ import traceback
 import os, shutil
 import csv
 import sys
+import random
 csv.field_size_limit(sys.maxsize)
 
 '''
@@ -21,7 +22,7 @@ class TensorflowModel():
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
 	default_split_ratio = 1.0
-	default_rseed = 2724
+	default_rseed = 724
 
 	default_standard_deviation = 0.1
 	default_bias_initialization_constant = .1
@@ -49,8 +50,32 @@ class TensorflowModel():
 	#default_dropout_structure = [False, False, False, False, False, False, False]
 	#default_layer_structure = [848, 1]
 
+	#got 99.125
+	#tfidf = TfidfVectorizer(min_df = 0.15, max_df = 0.95, ngram_range = (2, 4), sublinear_tf = False)
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [848, 500, 200, 100, 40, 20, 1]
+
+	#got 99.125
+	#tfidf = TfidfVectorizer(min_df = 0.1, max_df = 0.9, ngram_range = (2, 4), sublinear_tf = False)
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [1799, 1]
+
+	#also got 99.125
+	#tfidf = TfidfVectorizer(min_df = 0.3, max_df = 0.7, ngram_range = (1, 4), sublinear_tf = False)
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [1278, 1]
+
 	default_dropout_structure = [False, False, False, False, False, False, False]
-	default_layer_structure = [848, 500, 200, 100, 40, 20, 1]
+	default_layer_structure = [995, 1]
+
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [1799, 1200, 600, 200, 50, 1]
+
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [5208, 1]
+
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [848, 1]
 
 	#default_dropout_structure = [False, False, False, False, False, False, False, False, False, False]
 	#default_layer_structure = [848, 565, 379, 271, 167, 112, 74, 50, 30, 1]
@@ -287,7 +312,6 @@ class TensorflowModel():
 
 		trainingSize = len(trainingData[1])
 		hidden_out = self.x
-
 		for i in range(len(self.layers)-1):
 			if i == len(self.layers)-2: #if it's the output layer, I'm using sigmoid activation
 				hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
@@ -295,7 +319,7 @@ class TensorflowModel():
 			else:
 				if self.dropoutStructure[i+1] == True and self.use_dropout == True:
 					hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
-					hidden_out = tf.nn.dropout(hidden_out, keep_prob = 0.5)
+					#hidden_out = tf.nn.dropout(hidden_out, keep_prob = 0.5)
 					hidden_out = tf.nn.relu(hidden_out)
 				else:
 					hidden_out = tf.add(tf.matmul(hidden_out, self.weightMat[i]), self.biasMat[i])
@@ -364,11 +388,25 @@ class TensorflowModel():
 					sess.run(gd_step, feed_dict = {self.x: batch_xs, self.y_true: batch_ys})
 			
 			self.saveModel(sess, finalModel = True)
+			self.saveModel(sess, finalModel = False)
 			print ("saved model: " + str(self.testing))
 			self.testing = 1
 
 			print ("before testing accuracy: " + str(self.testing))
-			acc = sess.run(accuracy, feed_dict={self.x: testingData[0], self.y_true: testingData[1]})
+			acc, weights = sess.run([accuracy, self.weightMat], feed_dict={self.x: testingData[0], self.y_true: testingData[1]})
+			
+			'''float maxWeight = -9999
+			int maxIndex = -1
+			for i in range(len(weights[0])):
+				print (str(i) + ": " + str(weights[0][i]))
+				if(weights[0][i] > maxWeight):
+					maxWeight = weights[0][i]
+					maxIndex = i
+
+			print (maxIndex)
+			print (maxWeight)'''
+
+				#print (random.randint(1, 10))
 			if acc > maxTestAccuracy:
 						maxTestAccuracy = acc
 						self.saveModel(sess, finalModel = False)
@@ -514,7 +552,7 @@ class TensorflowModel():
 model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = True)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(850);
+features, labels = model.getFeaturesAndLabelsFromCSV(997);
 model.trainModel(features, labels)
 
 testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
