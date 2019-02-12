@@ -108,7 +108,7 @@ class Word2VecFeatureExtractor():
 		print ("just printed length of both features and testFeatures")
 		#now, it is time to add on to features
 
-		vectorSize = 150
+		vectorSize = 200
 		model = Word2Vec(rawTexts, size=vectorSize, window=5, min_count=5, sg = 1)
 		model.train(rawTexts, total_examples=len(rawTexts), epochs=10)
 

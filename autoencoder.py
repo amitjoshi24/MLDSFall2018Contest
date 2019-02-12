@@ -18,8 +18,8 @@ author: Amit Joshi
 email: amit.joshiusa@gmail.com
 '''
 class AutoEncoder():
-	default_lr = 0.00001
-	default_EPOCHS = 4000
+	default_lr = 0.000008
+	default_EPOCHS = 7000
 	default_BATCH_SIZE = 469
 	numHiddenLayerNodes = 475
 	numInputLayerNodes = 848
@@ -31,7 +31,8 @@ class AutoEncoder():
 	default_mean = 0
 	default_bias_initialization_constant = 0.0
 	
-	default_layer_structure = [numInputLayerNodes, 650, numInputLayerNodes]
+	#default_layer_structure = [numInputLayerNodes, 700, numInputLayerNodes]
+	default_layer_structure = [1045, 1000, 1045]
 	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, default_mean = default_mean):
 		tf.reset_default_graph()
 		self.totalEntries = totalEntries
@@ -317,8 +318,9 @@ class AutoEncoder():
 				f.write(str(i) + ",")
 				for j in range(0, len(decodedFeatures[i])):
 					f.write(str(decodedFeatures[i][j]) + ",")
-				f.write("fakeText,")
+				f.write("fakeText")
 				if labels is not None:
+					f.write("fakeText,")
 					if(labels[i][0] == 1):
 						f.write("poetry")
 					else:
@@ -330,7 +332,7 @@ class AutoEncoder():
 autoencoder = AutoEncoder(modelName = "./autoencoder.ckpt", csvFileName = "clean_extra_training_dataset.csv")
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = autoencoder.getFeaturesAndLabelsFromCSV(850);
+features, labels = autoencoder.getFeaturesAndLabelsFromCSV(1047);
 autoencoder.trainModel(features = features, labels = labels)
 testFeatures = autoencoder.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
 autoencoder2 = AutoEncoder(modelName = "./autoencoder2.ckpt", csvFileName = None)

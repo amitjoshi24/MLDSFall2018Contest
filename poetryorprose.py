@@ -65,8 +65,12 @@ class TensorflowModel():
 	#default_dropout_structure = [False, False, False, False, False, False, False]
 	#default_layer_structure = [1278, 1]
 
+	#got 100%
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [995, 1]
+
 	default_dropout_structure = [False, False, False, False, False, False, False]
-	default_layer_structure = [995, 1]
+	default_layer_structure = [1045, 1]
 
 	#default_dropout_structure = [False, False, False, False, False, False, False]
 	#default_layer_structure = [1799, 1200, 600, 200, 50, 1]
@@ -337,7 +341,7 @@ class TensorflowModel():
 		#l1_regularizer = tf.contrib.layers.l2_regularizer(scale = 0.001, scope=None)
 
 		
-		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.0001, scale_l2 = 0.045, scope = None)
+		l1_regularizer = tf.contrib.layers.l1_l2_regularizer(scale_l1 = 0.00001, scale_l2 = 0.030, scope = None)
 		weights = tf.trainable_variables() # all vars of your graph
 
 		regularization_penalty = tf.contrib.layers.apply_regularization(l1_regularizer, weights)
@@ -549,13 +553,13 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = True)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_denoised_clean_extra_training_dataset.csv", use_dropout = True)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(997);
+features, labels = model.getFeaturesAndLabelsFromCSV(1047);
 model.trainModel(features, labels)
 
-testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
+testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_denoised_clean_extra_test_dataset.csv")
 model2 = TensorflowModel()
 model2.restoreModel("./finalModelFolder/tensorflowmodel.ckpt")
 model2.executeModel(testFeatures, outputFileName = "submission.csv")
