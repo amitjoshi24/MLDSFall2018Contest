@@ -128,6 +128,14 @@ class ExtraFeatureExtractor():
 
 		extraFeatures = tfidf.fit_transform(rawTexts)
 
+		print (tfidf.get_feature_names())
+
+		ngramFeatureNames = list()
+		newFeatureNames = tfidf.get_feature_names()
+		for i in range(len(newFeatureNames)):
+			ngramFeatureNames.append(str(newFeatureNames[i]))
+			#print (str(i) + ": " + ngramFeatureNames[i])
+
 		densed = extraFeatures.todense()
 
 		counter = 0
@@ -163,8 +171,16 @@ class ExtraFeatureExtractor():
 		print(features)
 		print ("--------------------Features Printed-----------------------")
 
+		origFeaturesHeader = "ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,"
+		totalFeaturesHeader = origFeaturesHeader
+		for i in range(len(ngramFeatureNames)):
+			if i < len(ngramFeatureNames) - 1:
+				totalFeaturesHeader += ngramFeatureNames[i] + ","
+			else:
+				totalFeaturesHeader += ngramFeatureNames[i] + ","
+
 		f = open(outputFileName, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+		f.write(totalFeaturesHeader + "text,class\n")
 		for i in range(len(features)):
 			#print (i)
 			f.write(str(i) + ",")
@@ -180,7 +196,7 @@ class ExtraFeatureExtractor():
 			f.write("\n")
 
 		f = open(outputFileName2, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text\n")
+		f.write(totalFeaturesHeader + "text\n")
 		for i in range(len(testFeatures)):
 			#print (i)
 			f.write(str(i) + ",")

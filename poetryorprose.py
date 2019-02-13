@@ -258,6 +258,8 @@ class TensorflowModel():
 				#features.append(row[0:labelCol-1])
 
 				features.append(row[1:labelCol-1])
+				#print (row[1])
+				#print ("------")
 				if(row[labelCol] == "prose"):
 					labels.append([0])
 				else:
@@ -396,9 +398,21 @@ class TensorflowModel():
 			print ("saved model: " + str(self.testing))
 			self.testing = 1
 
-			print ("before testing accuracy: " + str(self.testing))
+			#print ("before testing accuracy: " + str(self.testing))
 			acc, weights = sess.run([accuracy, self.weightMat], feed_dict={self.x: testingData[0], self.y_true: testingData[1]})
 			
+			weights = weights[0]
+
+			#print (type(weights[0]))
+			sortedWeights = list()
+			for i in range(len(weights)):
+				#sortedWeights.append((weights[i].tolist()[0], i))
+				sortedWeights.append((i, weights[i].tolist()[0], i))
+
+			sortedWeights.sort()
+			for sw in sortedWeights:
+				print ("column: " + str(sw[0] + 2) + " " + " weight: " + str(sw[1]))
+
 			'''float maxWeight = -9999
 			int maxIndex = -1
 			for i in range(len(weights[0])):
@@ -553,13 +567,13 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_denoised_clean_extra_training_dataset.csv", use_dropout = True)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = False)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
 features, labels = model.getFeaturesAndLabelsFromCSV(1047);
 model.trainModel(features, labels)
 
-testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_denoised_clean_extra_test_dataset.csv")
+testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
 model2 = TensorflowModel()
 model2.restoreModel("./finalModelFolder/tensorflowmodel.ckpt")
 model2.executeModel(testFeatures, outputFileName = "submission.csv")

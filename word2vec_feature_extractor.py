@@ -28,13 +28,14 @@ class Word2VecFeatureExtractor():
 		testRawTexts = list()
 		testFeatures = list()
 
-
+		origTrainFeaturesHeader = ""
 		with open(self.csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTrainFeaturesHeader = ",".join(row[0:len(row)-2])
 					continue
 				if len(row) <= 1:
 					continue
@@ -48,6 +49,8 @@ class Word2VecFeatureExtractor():
 				finalText = re.sub('\<.+\>', '', text)
 				
 				finalText.replace("\n", "")
+				finalText.replace("\r", "")
+				finalText.replace("\t", "")
 				#print ("after: " + finalText)
 				#exit()
 				rawTexts.append(finalText.translate(None, string.punctuation).split(" ")) #happens to be the raw text column
@@ -70,13 +73,14 @@ class Word2VecFeatureExtractor():
 		features = newFeatures
 
 		
-
+		origTestFeaturesHeader = ""
 		with open(self.csvFileName2) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTestFeaturesHeader = ",".join(row[0:len(row)-1])
 					continue
 				if len(row) <= 1:
 					continue
@@ -89,6 +93,8 @@ class Word2VecFeatureExtractor():
 
 				finalText = re.sub('\<.+\>', '', text)
 				finalText.replace("\n", "")
+				finalText.replace("\r", "")
+				finalText.replace("\t", "")
 				#print ("after2: " + finalText)
 				testRawTexts.append(finalText.translate(None, string.punctuation).split(" ")) #happens to be the raw text column
 
@@ -109,8 +115,27 @@ class Word2VecFeatureExtractor():
 		#now, it is time to add on to features
 
 		vectorSize = 200
-		model = Word2Vec(rawTexts, size=vectorSize, window=5, min_count=5, sg = 1)
+
+		model = Word2Vec(rawTexts, size=vectorSize, window=5, min_count=5, sg = 1, workers=1)
 		model.train(rawTexts, total_examples=len(rawTexts), epochs=10)
+		origTrainFeaturesHeader += ","
+		origTestFeaturesHeader += ","
+		for i in range(vectorSize):
+			one_hot = [0] * vectorSize
+			one_hot[i] = 1
+			one_hot_vector = np.asarray(one_hot)
+
+			similarWord = str(model.similar_by_vector(one_hot_vector, topn = 1)[0][0]).lower()
+			similarWord = similarWord.translate(None, string.punctuation)
+			similarWord = similarWord.replace("\n", "")
+			similarWord = similarWord.replace("\r", "")
+			print(str(i) + " " + str(similarWord))
+			#print (similarWord[0])
+			#print (similarWord[0][0])
+			#print ('--------')
+
+			origTrainFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
+			origTestFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
 
 		print (model['ultra'])
 		print (type(model['ultra']))
@@ -186,7 +211,7 @@ class Word2VecFeatureExtractor():
 		print ("--------------------Features Printed-----------------------")
 
 		f = open(outputFileName, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+		f.write(origTrainFeaturesHeader + "text,class\n")
 		for i in range(len(features)):
 			#print (i)
 			f.write(str(i) + ",")
@@ -200,7 +225,7 @@ class Word2VecFeatureExtractor():
 			f.write("\n")
 
 		f = open(outputFileName2, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text\n")
+		f.write(origTestFeaturesHeader + "text\n")
 		for i in range(len(testFeatures)):
 			#print (i)
 			f.write(str(i) + ",")

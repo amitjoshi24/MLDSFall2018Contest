@@ -19,12 +19,14 @@ class DataCleaner():
 		else:
 			self.csvFileName = csvFileName
 
+		origTestFeaturesHeader = ""
 		with open(csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTestFeaturesHeader = ",".join(row[0:len(row)-1])
 					continue
 				if len(row) <= 1:
 					continue
@@ -95,7 +97,7 @@ class DataCleaner():
 		print ("--------------------Features Printed-----------------------")
 
 		f = open(outputFileName, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text\n")
+		f.write(origTestFeaturesHeader + ",text\n")
 		for i in range(len(features)):
 			print (i)
 			f.write(str(i) + ",")
@@ -113,13 +115,14 @@ class DataCleaner():
 		else:
 			self.csvFileName = csvFileName
 
-
+		origTrainFeaturesHeader = ""
 		with open(csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTrainFeaturesHeader = ",".join(row[0:len(row)-2])
 					continue
 				if len(row) <= 1:
 					continue
@@ -185,7 +188,7 @@ class DataCleaner():
 		print ("--------------------Features Printed-----------------------")
 
 		f = open(outputFileName, 'w')
-		f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+		f.write(origTrainFeaturesHeader + ",text,class\n")
 		for i in range(len(features)):
 			print (i)
 			f.write(str(i) + ",")
