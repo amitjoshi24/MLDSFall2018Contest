@@ -21,7 +21,7 @@ class Word2VecFeatureExtractor():
 		self.csvFileName = csvFileName;
 		self.csvFileName2 = csvFileName2;
 
-	def extractData(self, labelCol, csvFileName = None, outputFileName = None, outputFileName2 = None):
+	def extractData(self, labelCol, deeperDistinctionsTrainFileName, deeperDistinctionsTestFileName, csvFileName = None, outputFileName = None, outputFileName2 = None):
 		labels = list()
 		features = list()
 		rawTexts = list()
@@ -51,6 +51,7 @@ class Word2VecFeatureExtractor():
 				finalText.replace("\n", "")
 				finalText.replace("\r", "")
 				finalText.replace("\t", "")
+				#finalText = finalText.lower()
 				#print ("after: " + finalText)
 				#exit()
 				rawTexts.append(finalText.translate(None, string.punctuation).split(" ")) #happens to be the raw text column
@@ -95,6 +96,8 @@ class Word2VecFeatureExtractor():
 				finalText.replace("\n", "")
 				finalText.replace("\r", "")
 				finalText.replace("\t", "")
+
+				#finalText = finalText.lower()
 				#print ("after2: " + finalText)
 				testRawTexts.append(finalText.translate(None, string.punctuation).split(" ")) #happens to be the raw text column
 
@@ -114,10 +117,10 @@ class Word2VecFeatureExtractor():
 		print ("just printed length of both features and testFeatures")
 		#now, it is time to add on to features
 
-		vectorSize = 200
+		vectorSize = 203
 
-		model = Word2Vec(rawTexts, size=vectorSize, window=5, min_count=5, sg = 1, workers=1)
-		model.train(rawTexts, total_examples=len(rawTexts), epochs=10)
+		model = Word2Vec(rawTexts, size=vectorSize, window=5, min_count=2, sg = 1, workers=1)
+		model.train(rawTexts, total_examples=len(rawTexts), epochs=15)
 		origTrainFeaturesHeader += ","
 		origTestFeaturesHeader += ","
 		for i in range(vectorSize):
@@ -137,9 +140,17 @@ class Word2VecFeatureExtractor():
 			origTrainFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
 			origTestFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
 
-		print (model['ultra'])
-		print (type(model['ultra']))
-		print (model['ultra'].shape)
+		happinessArray = list()
+		sadnessArray = list()
+		godArray = list()
+
+		happyVector = model['felix']
+		sadVector = model['tristis']
+		godVector = model['deus']
+		#print ("happy: " + str(model['felix']))
+		#print ("sad: " + str(model['tristis']))
+		#print ("god: " + str(model['deus']))
+		
 		extraFeatures = list()
 		for text in rawTexts:
 			print (len(text))
@@ -152,7 +163,22 @@ class Word2VecFeatureExtractor():
 				except:
 					fakeVariable = 1
 			sumVector = np.true_divide(sumVector, numSummedWords)
+			
+			happinessCosineSimilarity = np.dot(sumVector, happyVector)/(np.linalg.norm(sumVector)*np.linalg.norm(happyVector))
+			happinessArray.append(happinessCosineSimilarity)
+
+			sadnessCosineSimilarity = np.dot(sumVector, sadVector)/(np.linalg.norm(sumVector)*np.linalg.norm(sadVector))
+			sadnessArray.append(sadnessCosineSimilarity)
+
+			godCosineSimilarity = np.dot(sumVector, godVector)/(np.linalg.norm(sumVector)*np.linalg.norm(godVector))
+			godArray.append(godCosineSimilarity)
+
 			extraFeatures.append(sumVector.tolist())
+
+		f = open(deeperDistinctionsTrainFileName, 'w')
+		f.write("Id,Happiness,Sadness,Religiousness\n")
+		for i in range(len(happinessArray)):
+			f.write(str(i) + "," + str(happinessArray[i]) + "," + str(sadnessArray[i]) + "," + str(godArray[i]) + "\n");
 
 		'''tfidf = TfidfVectorizer(min_df = 0.1, max_df = 0.9, ngram_range = (2, 4), sublinear_tf = False)
 
@@ -177,6 +203,10 @@ class Word2VecFeatureExtractor():
 		
 		testDensed = extraTestFeatures.todense()'''
 
+		testHappinessArray = list()
+		testSadnessArray = list()
+		testGodArray = list()
+
 		extraTestFeatures = list()
 		for text in testRawTexts:
 			print (len(text))
@@ -189,7 +219,22 @@ class Word2VecFeatureExtractor():
 				except:
 					fakeVariable = 1
 			sumVector = np.true_divide(sumVector, numSummedWords)
+
+			happinessCosineSimilarity = np.dot(sumVector, happyVector)/(np.linalg.norm(sumVector)*np.linalg.norm(happyVector))
+			testHappinessArray.append(happinessCosineSimilarity)
+
+			sadnessCosineSimilarity = np.dot(sumVector, sadVector)/(np.linalg.norm(sumVector)*np.linalg.norm(sadVector))
+			testSadnessArray.append(sadnessCosineSimilarity)
+
+			godCosineSimilarity = np.dot(sumVector, godVector)/(np.linalg.norm(sumVector)*np.linalg.norm(godVector))
+			testGodArray.append(godCosineSimilarity)
+
 			extraTestFeatures.append(sumVector.tolist())
+
+		f = open(deeperDistinctionsTestFileName, 'w')
+		f.write("Id,Happiness,Sadness,Religiousness\n")
+		for i in range(len(testHappinessArray)):
+			f.write(str(i) + "," + str(testHappinessArray[i]) + "," + str(testSadnessArray[i]) + "," + str(testGodArray[i]) + "\n");
 
 		counter = 0
 		for newFeature in extraTestFeatures:
@@ -236,4 +281,4 @@ class Word2VecFeatureExtractor():
 
 
 word2VecFeatureExtractor = Word2VecFeatureExtractor("extra_training_dataset.csv", "extra_test_dataset.csv");
-word2VecFeatureExtractor.extractData(labelCol = 847, outputFileName = "extra_extra_training_dataset.csv", outputFileName2 = "extra_extra_test_dataset.csv")
+word2VecFeatureExtractor.extractData(labelCol = 1799, deeperDistinctionsTrainFileName = "deeper_distinctions_train.txt", deeperDistinctionsTestFileName = "deeper_distinctions_test.txt", outputFileName = "extra_extra_training_dataset.csv", outputFileName2 = "extra_extra_test_dataset.csv")

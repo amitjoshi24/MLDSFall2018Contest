@@ -18,7 +18,7 @@ author: Amit Joshi
 email: amit.joshiusa@gmail.com
 '''
 class AutoEncoder():
-	default_lr = 0.000008
+	default_lr = 0.000004
 	default_EPOCHS = 7000
 	default_BATCH_SIZE = 469
 	numHiddenLayerNodes = 475
@@ -32,7 +32,7 @@ class AutoEncoder():
 	default_bias_initialization_constant = 0.0
 	
 	#default_layer_structure = [numInputLayerNodes, 700, numInputLayerNodes]
-	default_layer_structure = [1045, 1000, 1045]
+	default_layer_structure = [2000, 1500, 2000]
 	def __init__(self, totalEntries = None, modelName = None, csvFileName = None, layerStructure = default_layer_structure, rseed = default_rseed, standard_deviation = default_standard_deviation, lr = default_lr, EPOCHS = default_EPOCHS, BATCH_SIZE = default_BATCH_SIZE, bias_initialization_constant = default_bias_initialization_constant, default_mean = default_mean):
 		tf.reset_default_graph()
 		self.totalEntries = totalEntries
@@ -111,12 +111,14 @@ class AutoEncoder():
 		features = list()
 		if csvFileName is None:
 			csvFileName = self.csvFileName
+		origTestFeaturesHeader = ""
 		with open(csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTestFeaturesHeader = ",".join(row[0:len(row)-1])
 					continue
 				if len(row) <= 1:
 					continue
@@ -132,7 +134,7 @@ class AutoEncoder():
 
 		features = np.asarray(features)
 
-		return features
+		return features, origTestFeaturesHeader
 
 
 	def getFeaturesAndLabelsFromCSV(self, labelCol, csvFileName = None):
@@ -141,12 +143,14 @@ class AutoEncoder():
 		if csvFileName is None:
 			csvFileName = self.csvFileName
 
+		origTrainFeaturesHeader = ""
 		with open(csvFileName) as csvfile:
 			reader = csv.reader(csvfile)
 			first = True
 			for row in reader:
 				if(first):
 					first = False
+					origTrainFeaturesHeader = ",".join(row[0:len(row)-2])
 					continue
 				if len(row) <= 1:
 					continue
@@ -174,7 +178,7 @@ class AutoEncoder():
 		print ("--------------------Features Printed-----------------------")
 
 		#features, labels = self.unison_shuffled_copies(features, labels, self.rseed)
-		return features, labels
+		return features, labels, origTrainFeaturesHeader
 
 	def _get_beta_accumulators(self):
 		return self._beta1_power, self._beta2_power
@@ -280,7 +284,7 @@ class AutoEncoder():
 
 		print ("My restored model name is finally: " + self.restoredModelName)
 	
-	def executeModel(self, features, labels, outputFileName = None):
+	def executeModel(self, features, featuresHeader, labels, outputFileName = None):
 
 		hidden_out = self.x
 		for i in range(len(self.layers)-1):
@@ -310,9 +314,9 @@ class AutoEncoder():
 
 			f = open(outputFileName, 'w')
 			if labels is not None:
-				f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text,class\n")
+				f.write(featuresHeader + ",text,class\n")
 			else:
-				f.write("ID,Personal Pronouns,Demonstrative Pronouns,Quidam,Reflexive Pronouns,Iste,Alius,Ipse,Idem,Priusquam,Antequam,Quominus,Dum,Quin,Ut,Conditionals,Prepositions,Interrogative Sentences,Superlatives,Atque + consonant,Relative Clauses,Mean Length Relative Clauses,Gerunds and Gerundives,Cum,Conjunctions,Vocatives,Mean Sentence Length,text\n")
+				f.write(featuresHeader + ",text\n")
 			for i in range(len(decodedFeatures)):
 				print (i)
 				f.write(str(i) + ",")
@@ -329,15 +333,19 @@ class AutoEncoder():
 
 			f.close()
 
-autoencoder = AutoEncoder(modelName = "./autoencoder.ckpt", csvFileName = "clean_extra_training_dataset.csv")
+autoencoder = AutoEncoder(modelName = "./autoencoder.ckpt", csvFileName = "normalized_extra_extra_training_dataset.csv")
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = autoencoder.getFeaturesAndLabelsFromCSV(1047);
+features, labels, origTrainFeaturesHeader = autoencoder.getFeaturesAndLabelsFromCSV(2002);
 autoencoder.trainModel(features = features, labels = labels)
-testFeatures = autoencoder.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
+testFeatures, origTestFeaturesHeader = autoencoder.getFeaturesFromCSV(csvFileName = "normalized_extra_extra_test_dataset.csv")
 autoencoder2 = AutoEncoder(modelName = "./autoencoder2.ckpt", csvFileName = None)
 
 autoencoder2.restoreModel("./autoencoder.ckpt")
-autoencoder2.executeModel(features = features, labels = labels, outputFileName = "denoised_clean_extra_training_dataset.csv")
+autoencoder2.executeModel(features = features, featuresHeader = origTrainFeaturesHeader, labels = labels, outputFileName = "denoised_normalized_extra_extra_training_dataset.csv")
 
-autoencoder2.executeModel(features = testFeatures, labels = None, outputFileName = "denoised_clean_extra_test_dataset.csv")
+autoencoder2.executeModel(features = testFeatures, featuresHeader = origTestFeaturesHeader,labels = None, outputFileName = "denoised_normalized_extra_extra_test_dataset.csv")
+
+
+
+

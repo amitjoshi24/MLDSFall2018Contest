@@ -22,7 +22,7 @@ class TensorflowModel():
 	numInputLayerNodes = 26
 	numOutputLayerNodes = 1
 	default_split_ratio = 1.0
-	default_rseed = 724
+	default_rseed = 2724
 
 	default_standard_deviation = 0.1
 	default_bias_initialization_constant = .1
@@ -67,10 +67,14 @@ class TensorflowModel():
 
 	#got 100%
 	#default_dropout_structure = [False, False, False, False, False, False, False]
-	#default_layer_structure = [995, 1]
+	#default_layer_structure = [895, 1]
 
 	default_dropout_structure = [False, False, False, False, False, False, False]
-	default_layer_structure = [1045, 1]
+	default_layer_structure = [2000, 1]
+
+	#got 100%
+	#default_dropout_structure = [False, False, False, False, False, False, False]
+	#default_layer_structure = [1045, 1]
 
 	#default_dropout_structure = [False, False, False, False, False, False, False]
 	#default_layer_structure = [1799, 1200, 600, 200, 50, 1]
@@ -242,6 +246,7 @@ class TensorflowModel():
 	def getFeaturesAndLabelsFromCSV(self, labelCol, csvFileName = None):
 		labels = list()
 		features = list()
+		origTrainFeaturesHeaderList = ""
 		if csvFileName is None:
 			csvFileName = self.csvFileName
 
@@ -251,6 +256,7 @@ class TensorflowModel():
 			for row in reader:
 				if(first):
 					first = False
+					origTrainFeaturesHeaderList = row[0:len(row)-2]
 					continue
 				if len(row) <= 1:
 					continue
@@ -280,12 +286,12 @@ class TensorflowModel():
 		print ("--------------------Features Printed-----------------------")
 
 		features, labels = self.unison_shuffled_copies(features, labels, self.rseed)
-		return features, labels
+		return features, labels, origTrainFeaturesHeaderList
 
 	def _get_beta_accumulators(self):
 		return self._beta1_power, self._beta2_power
 
-	def trainModel(self, features, labels, splitRatio = default_split_ratio, epochs = None, retrain = False, restoredModelName = None):
+	def trainModel(self, features, labels, origTrainFeaturesHeaderList, featureRankOutputFile, splitRatio = default_split_ratio, epochs = None, retrain = False, restoredModelName = None):
 		
 		'''startFile = open("started.txt", "w")
 		startFile.write("I started")'''
@@ -407,11 +413,18 @@ class TensorflowModel():
 			sortedWeights = list()
 			for i in range(len(weights)):
 				#sortedWeights.append((weights[i].tolist()[0], i))
-				sortedWeights.append((i, weights[i].tolist()[0], i))
+				sortedWeights.append((weights[i].tolist()[0], i))
 
 			sortedWeights.sort()
+			sortedWeights.reverse()
+			f = open(featureRankOutputFile, 'w')
 			for sw in sortedWeights:
-				print ("column: " + str(sw[0] + 2) + " " + " weight: " + str(sw[1]))
+				#print ("featureName: " + str(origTrainFeaturesHeaderList[sw[1]]) + " weight: " + str(sw[0]))
+				res = str(origTrainFeaturesHeaderList[sw[1]]) + "\t\thad weight: " + str(sw[0])
+				print (res)
+				f.write(res + "\n")
+			f.close()
+
 
 			'''float maxWeight = -9999
 			int maxIndex = -1
@@ -567,13 +580,13 @@ class TensorflowModel():
 			#print ("Labels: " + str(predictionAndConfidenceArray) + "\n")
 
 
-model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "clean_extra_training_dataset.csv", use_dropout = False)
+model = TensorflowModel(modelName = "./tensorflowmodel.ckpt", csvFileName = "normalized_denoised_normalized_extra_extra_training_dataset.csv", use_dropout = False)
 #applicationEntry = TensorflowApplicationEntry("creditdata", "postgres", "password", "localhost", 5433, 17)
 #features, labels = model.getFeaturesAndLabelsFromDatabase(applicationEntry)
-features, labels = model.getFeaturesAndLabelsFromCSV(1047);
-model.trainModel(features, labels)
+features, labels, origTrainFeaturesHeaderList = model.getFeaturesAndLabelsFromCSV(2002);
+model.trainModel(features, labels, origTrainFeaturesHeaderList, "feature_ranks.txt")
 
-testFeatures = model.getFeaturesFromCSV(csvFileName = "clean_extra_test_dataset.csv")
+testFeatures = model.getFeaturesFromCSV(csvFileName = "normalized_denoised_normalized_extra_extra_test_dataset.csv")
 model2 = TensorflowModel()
 model2.restoreModel("./finalModelFolder/tensorflowmodel.ckpt")
 model2.executeModel(testFeatures, outputFileName = "submission.csv")
