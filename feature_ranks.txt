@@ -1,0 +1,2000 @@
+sg22 similarWord: vectura		had weight: 0.0583204440773
+sg61 similarWord: cognitiones		had weight: 0.0528331212699
+sg14 similarWord: auriculis		had weight: 0.0528124421835
+sg147 similarWord: ipso		had weight: 0.052121669054
+sg177 similarWord: litteras		had weight: 0.0485891140997
+sg43 similarWord: aperit		had weight: 0.0463882498443
+sg42 similarWord: patri		had weight: 0.0460569784045
+sg148 similarWord: relinquere		had weight: 0.0460200384259
+sg185 similarWord: ingressusque		had weight: 0.0453465171158
+sg11 similarWord: iniuria		had weight: 0.045163474977
+sg102 similarWord: citra		had weight: 0.0451173894107
+sg157 similarWord: sum		had weight: 0.044793330133
+sg32 similarWord: spissis		had weight: 0.0443105995655
+sg39 similarWord: legatos		had weight: 0.0443070605397
+sg5 similarWord: large		had weight: 0.0437678731978
+sg119 similarWord: cruciatus		had weight: 0.0428553707898
+Conjunctions		had weight: 0.0428480654955
+sg120 similarWord: dedi		had weight: 0.0420591533184
+sg29 similarWord: datur		had weight: 0.0420103147626
+sg19 similarWord: mediocriter		had weight: 0.0413908660412
+visus est		had weight: 0.0407600365579
+sg34 similarWord: coepi		had weight: 0.0403469130397
+sg112 similarWord: ego		had weight: 0.0400639027357
+sg21 similarWord: cyzicum		had weight: 0.0381446368992
+sg36 similarWord: metas		had weight: 0.0378829985857
+sg168 similarWord: gerimus		had weight: 0.0374632403255
+sg142 similarWord: sciens		had weight: 0.0363936536014
+sg127 similarWord: inmortales		had weight: 0.0361965373158
+sg194 similarWord: nominis		had weight: 0.0359921827912
+sg135 similarWord: senioribus		had weight: 0.0351246595383
+sg15 similarWord: volucrum		had weight: 0.0347201451659
+sg78 similarWord: adprobantibus		had weight: 0.0345591753721
+sg117 similarWord: delectavit		had weight: 0.0343468338251
+sg8 similarWord: dedisti		had weight: 0.0332609415054
+sg152 similarWord: atque		had weight: 0.0331815369427
+sg163 similarWord: incendio		had weight: 0.0329687446356
+sg13 similarWord: ni		had weight: 0.0328505411744
+sg160 similarWord: meos		had weight: 0.0326915606856
+sg28 similarWord: plusque		had weight: 0.0318991057575
+est te		had weight: 0.0316634327173
+sg1 similarWord: fraudem		had weight: 0.0312031246722
+sg60 similarWord: insanum		had weight: 0.031153505668
+sg175 similarWord: legitimis		had weight: 0.0310660079122
+sg68 similarWord: tyranno		had weight: 0.0307025443763
+sg91 similarWord: dicit		had weight: 0.0302293840796
+non eadem		had weight: 0.0297158975154
+sg47 similarWord: complet		had weight: 0.0295767616481
+Prepositions		had weight: 0.0295668412
+sg27 similarWord: honorem		had weight: 0.0290919728577
+Quominus		had weight: 0.0290576871485
+sg75 similarWord: hasce		had weight: 0.0287186522037
+sg122 similarWord: caseo		had weight: 0.0286529269069
+ego si		had weight: 0.0286254584789
+quid non		had weight: 0.0277790464461
+sg126 similarWord: mitto		had weight: 0.027764711529
+sg73 similarWord: destinatam		had weight: 0.0270627960563
+sg165 similarWord: sunt		had weight: 0.0270101893693
+sg81 similarWord: iustas		had weight: 0.0269136838615
+sg149 similarWord: albus		had weight: 0.0268414784223
+per annos		had weight: 0.0267986431718
+in patriam		had weight: 0.026156052947
+sg167 similarWord: laudes		had weight: 0.0257723685354
+sg166 similarWord: erimus		had weight: 0.0255357604474
+ego non		had weight: 0.0254907291383
+sg111 similarWord: frequentes		had weight: 0.0247912853956
+sg50 similarWord: sceleris		had weight: 0.0247381869704
+at in		had weight: 0.0247326679528
+ita in		had weight: 0.0245979744941
+hanc rem		had weight: 0.0242958515882
+in animo		had weight: 0.0242094397545
+tibi esse		had weight: 0.0240436960012
+ab omnibus		had weight: 0.0238637849689
+hic quoque		had weight: 0.0238325577229
+ab aliis		had weight: 0.0237152650952
+nec tantum		had weight: 0.023690149188
+sg153 similarWord: longo		had weight: 0.0236125495285
+sg2 similarWord: diversa		had weight: 0.0235084872693
+in asia		had weight: 0.0234982334077
+in arma		had weight: 0.0233063139021
+ego vero		had weight: 0.023223457858
+non habet		had weight: 0.0231734458357
+aut quae		had weight: 0.0230953916907
+in una		had weight: 0.0230921003968
+difficile est		had weight: 0.023076787591
+tu quidem		had weight: 0.0230178516358
+tibi in		had weight: 0.0227199625224
+de me		had weight: 0.0225801281631
+quo non		had weight: 0.0222806576639
+quid te		had weight: 0.0222431048751
+nunc si		had weight: 0.0222385842353
+sg62 similarWord: male		had weight: 0.0221311934292
+et tu		had weight: 0.0220765266567
+est nunc		had weight: 0.0217264611274
+sg87 similarWord: potuerint		had weight: 0.0216261241585
+sg191 similarWord: quaestionis		had weight: 0.0216196049005
+sine dubio		had weight: 0.0216138288379
+cum vero		had weight: 0.0215981733054
+tu me		had weight: 0.0214728880674
+quia non		had weight: 0.0213789902627
+haec tibi		had weight: 0.0213763955981
+sg137 similarWord: crebritate		had weight: 0.0212994888425
+non te		had weight: 0.0212068911642
+ego sum		had weight: 0.0211383793503
+nunc quidem		had weight: 0.0210402347147
+sg159 similarWord: motum		had weight: 0.0210140421987
+nec enim		had weight: 0.0209290925413
+sed quia		had weight: 0.0209275390953
+nunc me		had weight: 0.0207876879722
+in primo		had weight: 0.0207781326026
+fama est		had weight: 0.0207310318947
+in oratione		had weight: 0.020724652335
+nec te		had weight: 0.0206169802696
+me de		had weight: 0.0205594003201
+quae sint		had weight: 0.0205090399832
+ipsum quod		had weight: 0.0204990040511
+actum est		had weight: 0.0204738080502
+quid mihi		had weight: 0.0204568076879
+sg172 similarWord: opiterginis		had weight: 0.0202223639935
+sg23 similarWord: sordent		had weight: 0.0202202890068
+sg46 similarWord: raptus		had weight: 0.0201958268881
+eam rem		had weight: 0.0201385151595
+in orbem		had weight: 0.0201073978096
+at si		had weight: 0.0200024414808
+aut si		had weight: 0.0199276618659
+haec ita		had weight: 0.0198346432298
+ex se		had weight: 0.0198205783963
+sg49 similarWord: potiorem		had weight: 0.0197263062
+et qua		had weight: 0.0197041947395
+hoc loco		had weight: 0.0195124745369
+in limine		had weight: 0.0194829180837
+sg200 similarWord: fecerint		had weight: 0.0194620415568
+te non		had weight: 0.0194212514907
+paulo post		had weight: 0.0193047113717
+haec enim		had weight: 0.0192912835628
+mihi quod		had weight: 0.0190977528691
+certo scio		had weight: 0.0190333798528
+et ad		had weight: 0.0189749449492
+nec mora		had weight: 0.0189722869545
+quid in		had weight: 0.0188568942249
+quid ex		had weight: 0.0188404191285
+qui sibi		had weight: 0.0187667813152
+non me		had weight: 0.0186240300536
+satis esse		had weight: 0.0185934249312
+quae te		had weight: 0.0185580570251
+sg158 similarWord: stare		had weight: 0.0185508634895
+est me		had weight: 0.0185468513519
+sg141 similarWord: credendum		had weight: 0.0184767432511
+tibi si		had weight: 0.0184750147164
+factus est		had weight: 0.0184335932136
+non tibi		had weight: 0.0184109248221
+ubi non		had weight: 0.0183753594756
+et tantum		had weight: 0.0183270648122
+per te		had weight: 0.0181090999395
+in iudicium		had weight: 0.0180455818772
+aequo animo		had weight: 0.0180046353489
+hominum et		had weight: 0.0179844759405
+iam mihi		had weight: 0.017838280648
+saepe in		had weight: 0.0177246592939
+non tam		had weight: 0.0176964160055
+nescio an		had weight: 0.0176843479276
+quem in		had weight: 0.017594544217
+esse non		had weight: 0.0174061786383
+sit si		had weight: 0.0173684488982
+qui non		had weight: 0.0172555968165
+si me		had weight: 0.0172272212803
+sg124 similarWord: tunc		had weight: 0.0172177795321
+sg88 similarWord: petam		had weight: 0.0170626696199
+non tantum		had weight: 0.0169114433229
+ante diem		had weight: 0.0168667584658
+si fieri		had weight: 0.0167034380138
+et mihi		had weight: 0.0166901331395
+est haec		had weight: 0.0166413765401
+per omnes		had weight: 0.0166045054793
+atque ex		had weight: 0.0165698193014
+magno opere		had weight: 0.016536006704
+non haec		had weight: 0.0165340024978
+illa quidem		had weight: 0.0165254436433
+ne in		had weight: 0.0165225416422
+haec quidem		had weight: 0.0165119227022
+mihi de		had weight: 0.0165042951703
+pars est		had weight: 0.0164973530918
+omnis et		had weight: 0.0164425652474
+hic et		had weight: 0.0164323374629
+nam in		had weight: 0.0163374152035
+quid dicam		had weight: 0.0163235217333
+ut sint		had weight: 0.0163212493062
+per me		had weight: 0.016310878098
+non illa		had weight: 0.0162634830922
+quae nos		had weight: 0.0161485094577
+per se		had weight: 0.0160853639245
+nec quisquam		had weight: 0.0159651208669
+in homine		had weight: 0.0159340631217
+est itaque		had weight: 0.0159017201513
+non est		had weight: 0.0158810801804
+venit ad		had weight: 0.015864694491
+nec me		had weight: 0.0157701075077
+Dum		had weight: 0.0157351624221
+quid tibi		had weight: 0.0157143417746
+et hoc		had weight: 0.0156476311386
+et quoniam		had weight: 0.0156115330756
+in orbe		had weight: 0.0155932800844
+tamen id		had weight: 0.0154849160463
+nunc in		had weight: 0.0154722584412
+est non		had weight: 0.0154432654381
+iam diu		had weight: 0.0153441987932
+in contione		had weight: 0.0153392665088
+quam sit		had weight: 0.0153311612085
+tibi non		had weight: 0.0151495663449
+non semper		had weight: 0.015036072582
+sed tamen		had weight: 0.0149487145245
+cum te		had weight: 0.0149212488905
+aut per		had weight: 0.0148980598897
+eam causam		had weight: 0.0148826427758
+in media		had weight: 0.0148588288575
+mihi in		had weight: 0.0148530574515
+tu in		had weight: 0.0148018216714
+illa quae		had weight: 0.0147129371762
+quid quod		had weight: 0.0146815991029
+sed nihil		had weight: 0.0146030820906
+te ipsum		had weight: 0.0145316254348
+quin et		had weight: 0.0144927809015
+et me		had weight: 0.014436436817
+venit et		had weight: 0.0144153861329
+ego in		had weight: 0.0143706388772
+ab hoc		had weight: 0.0142835406587
+quae ex		had weight: 0.0142394723371
+nos quoque		had weight: 0.0142368031666
+tamen haec		had weight: 0.0142226265743
+nunc quoque		had weight: 0.0141826691106
+ex ipso		had weight: 0.0140164764598
+tamen ex		had weight: 0.0139937093481
+iam tibi		had weight: 0.0139282410964
+sg99 similarWord: quam		had weight: 0.013919419609
+ad aras		had weight: 0.0138486018404
+sg54 similarWord: permittitur		had weight: 0.013838457875
+post mortem		had weight: 0.0138327861205
+quo sit		had weight: 0.0138321770355
+ut tibi		had weight: 0.0138189215213
+si per		had weight: 0.0137651273981
+in numero		had weight: 0.0137411141768
+nunc de		had weight: 0.0136284613982
+sed nec		had weight: 0.0136259561405
+est hoc		had weight: 0.0135839805007
+sed non		had weight: 0.0135015826672
+at non		had weight: 0.0134742613882
+qui mihi		had weight: 0.0134731903672
+licet et		had weight: 0.0132902292535
+tum in		had weight: 0.0132700372487
+sg150 similarWord: melioris		had weight: 0.013237696141
+non erit		had weight: 0.0132189001888
+quidem ego		had weight: 0.0131668001413
+nec se		had weight: 0.0131644206122
+genus est		had weight: 0.0131436958909
+atque adeo		had weight: 0.0131292361766
+locus est		had weight: 0.013123376295
+in omnibus		had weight: 0.0130944792181
+tamquam in		had weight: 0.0130274798721
+tamen cum		had weight: 0.0130202742293
+hic est		had weight: 0.0129441395402
+et ubi		had weight: 0.012930592522
+nam mihi		had weight: 0.0128738209605
+qui tamen		had weight: 0.0128729818389
+itaque ut		had weight: 0.0128704654053
+sg53 similarWord: tabem		had weight: 0.0128566063941
+sg171 similarWord: isdem		had weight: 0.0128026818857
+haec ut		had weight: 0.0127233751118
+et tibi		had weight: 0.0127122066915
+in ore		had weight: 0.0125968037173
+hoc tempus		had weight: 0.0125614982098
+semper et		had weight: 0.0125120365992
+in locum		had weight: 0.0124204736203
+quid esset		had weight: 0.0123798092827
+quae per		had weight: 0.0122498599812
+quo nihil		had weight: 0.0122374230996
+mihi et		had weight: 0.0120999533683
+an in		had weight: 0.0120222894475
+et pro		had weight: 0.0119716320187
+nihil esse		had weight: 0.0119539676234
+cum suis		had weight: 0.0119484998286
+opus esse		had weight: 0.0119350850582
+haec sunt		had weight: 0.0118419434875
+tibi me		had weight: 0.0118110012263
+neque ego		had weight: 0.0117331035435
+ab illo		had weight: 0.0117206890136
+certe non		had weight: 0.0117150647566
+sg82 similarWord: fugae		had weight: 0.0117046311498
+sed ne		had weight: 0.0115766171366
+ego qui		had weight: 0.0115154897794
+et magna		had weight: 0.0114161316305
+nam neque		had weight: 0.0114108016714
+sg66 similarWord: crasso		had weight: 0.0114014903083
+iam nunc		had weight: 0.0113954227418
+ad bellum		had weight: 0.0113308737054
+ob causam		had weight: 0.0113239428028
+tum vero		had weight: 0.0112775340676
+ante omnia		had weight: 0.0111751314253
+et nomen		had weight: 0.0111405104399
+hic in		had weight: 0.0111188329756
+iam in		had weight: 0.0110096056014
+hoc autem		had weight: 0.0109807383269
+qui te		had weight: 0.0109585253522
+si quae		had weight: 0.0109062204137
+in aliis		had weight: 0.0108684320003
+sg94 similarWord: quietem		had weight: 0.010854893364
+at ego		had weight: 0.0108330128714
+vis est		had weight: 0.0107965618372
+est tum		had weight: 0.0107724117115
+et multa		had weight: 0.0107691641897
+ab urbe		had weight: 0.0107466923073
+et tamen		had weight: 0.0107152592391
+per agros		had weight: 0.0107118953019
+si te		had weight: 0.0105764949694
+ad tempus		had weight: 0.0105403605849
+habet in		had weight: 0.0105237960815
+non in		had weight: 0.0105087934062
+est nisi		had weight: 0.0105061037466
+est ex		had weight: 0.0104902517051
+quam diu		had weight: 0.0104227764532
+ea causa		had weight: 0.0103620011359
+et id		had weight: 0.0103588746861
+est locus		had weight: 0.0103429295123
+in terra		had weight: 0.0103182941675
+cum tibi		had weight: 0.0102768978104
+hoc si		had weight: 0.0102551365271
+et sine		had weight: 0.0102510256693
+iam pridem		had weight: 0.0101515119895
+et te		had weight: 0.0100709637627
+te cum		had weight: 0.0100638270378
+et magis		had weight: 0.0100607536733
+quis est		had weight: 0.0100305229425
+atque in		had weight: 0.0100150303915
+si quando		had weight: 0.00993808172643
+omnino non		had weight: 0.00989266205579
+hoc et		had weight: 0.00982155371457
+ab ipso		had weight: 0.00977715477347
+rerum omnium		had weight: 0.00977122597396
+me non		had weight: 0.00974073447287
+cur non		had weight: 0.0097233671695
+tum cum		had weight: 0.00970537122339
+ita enim		had weight: 0.00968316756189
+pro se		had weight: 0.00964055582881
+non solum		had weight: 0.00963457860053
+ne si		had weight: 0.00960551295429
+atque ad		had weight: 0.00950548332185
+sed ita		had weight: 0.00939311366528
+quod tamen		had weight: 0.00937062036246
+sed ego		had weight: 0.00936936959624
+populus romanus		had weight: 0.00932776555419
+quo se		had weight: 0.00929006189108
+atque haec		had weight: 0.00921447388828
+in mediis		had weight: 0.00910950172693
+eum qui		had weight: 0.00909612420946
+et maxime		had weight: 0.00906757079065
+non magis		had weight: 0.0090210493654
+sg184 similarWord: maritum		had weight: 0.00901660136878
+ne te		had weight: 0.00900300871581
+ex illis		had weight: 0.0089727351442
+quam me		had weight: 0.00896080490202
+et se		had weight: 0.00895519554615
+quae ad		had weight: 0.0089461710304
+in singulis		had weight: 0.00893635116518
+sibi in		had weight: 0.0089021762833
+saepe et		had weight: 0.00888209044933
+quae sine		had weight: 0.00887043401599
+opus est		had weight: 0.00882220175117
+sg6 similarWord: misera		had weight: 0.00881151296198
+ID		had weight: 0.0085481107235
+hic mihi		had weight: 0.00854151602834
+videtur esse		had weight: 0.00850047916174
+neque in		had weight: 0.00847023539245
+et apud		had weight: 0.00841366499662
+ego autem		had weight: 0.00840998627245
+est cum		had weight: 0.00835184659809
+quid de		had weight: 0.00835116580129
+non ad		had weight: 0.00832424126565
+in undis		had weight: 0.00828620046377
+data est		had weight: 0.00824359152466
+ergo ut		had weight: 0.0081925811246
+quae tamen		had weight: 0.00815981160849
+nam quae		had weight: 0.00811424385756
+atque ut		had weight: 0.00808445829898
+sed quid		had weight: 0.00806098431349
+sit et		had weight: 0.00803908053786
+per auras		had weight: 0.00803511403501
+primum ut		had weight: 0.00800248514861
+necesse sit		had weight: 0.00796449184418
+si nihil		had weight: 0.00792666804045
+et saepe		had weight: 0.00788848754019
+in modum		had weight: 0.00788060482591
+quam tibi		had weight: 0.00782164651901
+nunc est		had weight: 0.00780652277172
+ille est		had weight: 0.00780451390892
+est at		had weight: 0.00779834203422
+est qua		had weight: 0.00778665300459
+et si quid		had weight: 0.00778442900628
+nec quicquam		had weight: 0.00775950308889
+me tamen		had weight: 0.0077438284643
+ne sit		had weight: 0.00774116953835
+non dubito		had weight: 0.00765317631885
+atque ita		had weight: 0.00762934936211
+fuit ut		had weight: 0.00761179020628
+hoc non		had weight: 0.00756794819608
+qui in		had weight: 0.00756102660671
+deinde ut		had weight: 0.00756050460041
+in me		had weight: 0.00752328522503
+sg123 similarWord: filios		had weight: 0.00752094341442
+est quia		had weight: 0.00750553933904
+ab ore		had weight: 0.00741466740146
+si minus		had weight: 0.00741045130417
+quid sit		had weight: 0.00738681294024
+quid hoc		had weight: 0.00736414873973
+in nostra		had weight: 0.00734844058752
+aut quid		had weight: 0.00728312460706
+in manus		had weight: 0.00725000584498
+non idem		had weight: 0.00723900133744
+et sub		had weight: 0.00712662050501
+tempore et		had weight: 0.00709718372673
+facile est		had weight: 0.00705099664629
+id facere		had weight: 0.00704628229141
+neque ad		had weight: 0.00702270213515
+dictum est		had weight: 0.00700313411653
+ne cum		had weight: 0.00691951485351
+mihi iam		had weight: 0.00691651413217
+et rursus		had weight: 0.00690540578216
+at vero		had weight: 0.00687413243577
+vel si		had weight: 0.00680779106915
+si vero		had weight: 0.00675752060488
+sit tibi		had weight: 0.00672179693356
+quid me		had weight: 0.00669960537925
+ut eam		had weight: 0.00667365267873
+cetera quae		had weight: 0.00661667389795
+est quid		had weight: 0.00658190995455
+fuit in		had weight: 0.00657136039808
+ex alto		had weight: 0.00650971150026
+et ipsum		had weight: 0.00649060728028
+ut sine		had weight: 0.00646370463073
+sg51 similarWord: nimis		had weight: 0.00644391402602
+si tamen		had weight: 0.00641340622678
+ne quid		had weight: 0.0064093018882
+quis enim		had weight: 0.0064084189944
+quem non		had weight: 0.00637889280915
+qui se		had weight: 0.0063737356104
+ut ea quae		had weight: 0.00630984129384
+nec tamen		had weight: 0.00630366429687
+in tanta		had weight: 0.00625368766487
+mihi quidem		had weight: 0.00625129695982
+in illa		had weight: 0.00623224116862
+res publica		had weight: 0.00615034624934
+et mea		had weight: 0.00611964939162
+per vim		had weight: 0.00609450228512
+me tibi		had weight: 0.00604713568464
+pro salute		had weight: 0.00603523151949
+corpus et		had weight: 0.0060213888064
+prius quam		had weight: 0.00597913330421
+dubium est		had weight: 0.00593201676384
+in partes		had weight: 0.00592176010832
+ad ea quae		had weight: 0.00583386793733
+quid est		had weight: 0.00581149058416
+qui per		had weight: 0.00581003958359
+et quem		had weight: 0.00575425894931
+quam rem		had weight: 0.00574855925515
+quid opus		had weight: 0.00574739137664
+si tibi		had weight: 0.00573438545689
+ab uno		had weight: 0.00573267554864
+tu si		had weight: 0.00571817439049
+ne me		had weight: 0.00571409519762
+quod genus		had weight: 0.00570846023038
+ne qua		had weight: 0.00566604128107
+tu mihi		had weight: 0.0056400867179
+nullo modo		had weight: 0.00562871154398
+quam si		had weight: 0.00562810711563
+animo et		had weight: 0.00562061509117
+ubi est		had weight: 0.00561990961432
+sg108 similarWord: bruti		had weight: 0.00556285213679
+atque id		had weight: 0.00555100152269
+in africa		had weight: 0.00554577773437
+autem ut		had weight: 0.00548481335863
+est ego		had weight: 0.00548037653789
+est ad		had weight: 0.00547731574625
+et modo		had weight: 0.00546882022172
+quod te		had weight: 0.00543983699754
+erat in		had weight: 0.00543159618974
+nos non		had weight: 0.00538876606151
+si qui		had weight: 0.00530746113509
+nam hoc		had weight: 0.00529285147786
+ab ipsis		had weight: 0.00528949173167
+et rei		had weight: 0.00526678422466
+quid si		had weight: 0.00525911245495
+ille qui		had weight: 0.00519573641941
+haec si		had weight: 0.00518812891096
+at nunc		had weight: 0.00518010603264
+in terris		had weight: 0.00517235090956
+tibi cum		had weight: 0.00513075338677
+est mihi		had weight: 0.00508890161291
+in medio		had weight: 0.00508850440383
+nec sine		had weight: 0.00505459681153
+mihi crede		had weight: 0.00505241239443
+in unum		had weight: 0.00497808353975
+cum quo		had weight: 0.0049744467251
+ego nunc		had weight: 0.00495339930058
+facere non		had weight: 0.00493148295209
+in campo		had weight: 0.00489824544638
+apud eum		had weight: 0.00489634554833
+quod si		had weight: 0.00486824428663
+sg196 similarWord: sicariis		had weight: 0.00485174171627
+oculos et		had weight: 0.00485052727163
+quod nisi		had weight: 0.00483717024326
+non sint		had weight: 0.00482850102708
+per quam		had weight: 0.00480075320229
+atque ubi		had weight: 0.00480002025142
+quem cum		had weight: 0.00475692376494
+atque etiam		had weight: 0.00470769638196
+quoque non		had weight: 0.00469704996794
+nec in		had weight: 0.00466417521238
+in bello		had weight: 0.00466041825712
+est quem		had weight: 0.00465153390542
+apud quos		had weight: 0.00463325623423
+ut te		had weight: 0.00462954072282
+sg0 similarWord: calceos		had weight: 0.00457104016095
+in tempore		had weight: 0.00451186718419
+hoc quoque		had weight: 0.0045098210685
+ut ex		had weight: 0.00446427240968
+rursus in		had weight: 0.00439905654639
+quid nunc		had weight: 0.00438945181668
+sg114 similarWord: audacter		had weight: 0.0043614031747
+est tamen		had weight: 0.00433845538646
+ac si		had weight: 0.004321672488
+sed me		had weight: 0.00430394057184
+in forum		had weight: 0.00428087450564
+quam multa		had weight: 0.00427126931027
+opus sit		had weight: 0.00422884244472
+qui me		had weight: 0.00421025650576
+ab illis		had weight: 0.00419922498986
+si quidem		had weight: 0.00418048072606
+hoc tamen		had weight: 0.00414854940027
+qui si		had weight: 0.0041018310003
+quos in		had weight: 0.00410055881366
+mihi cum		had weight: 0.00406974926591
+nihil est		had weight: 0.00406023208052
+quam ad		had weight: 0.00405513541773
+ita me		had weight: 0.00405214773491
+cum sint		had weight: 0.00391476834193
+et ita		had weight: 0.0038956166245
+non id		had weight: 0.00388205051422
+quid autem		had weight: 0.00386942154728
+ab eodem		had weight: 0.00380911608227
+est et in		had weight: 0.00375367328525
+in medium		had weight: 0.00372322183102
+sic enim		had weight: 0.00363185303286
+in tua		had weight: 0.0035740446765
+tamen et		had weight: 0.00350950588472
+quod tam		had weight: 0.00347611028701
+sat est		had weight: 0.00343575980514
+nec si		had weight: 0.00342550198548
+hunc modum		had weight: 0.0034184625838
+si hoc		had weight: 0.00335144530982
+fas est		had weight: 0.00332721020095
+ut ea		had weight: 0.00330623076297
+aut cum		had weight: 0.00330237927847
+sg35 similarWord: exercet		had weight: 0.00329643115401
+ut idem		had weight: 0.00328737706877
+idem in		had weight: 0.00327948504128
+erit si		had weight: 0.0032732852269
+sit id		had weight: 0.00326590496115
+neque enim		had weight: 0.00326079246588
+ad unum		had weight: 0.00323514197953
+est quam		had weight: 0.00321215088479
+sed quoniam		had weight: 0.00319398497231
+est de		had weight: 0.00319078983739
+te quoque		had weight: 0.00318406382576
+non hoc		had weight: 0.00316673377529
+quo quidem		had weight: 0.00314725679345
+ita non		had weight: 0.00307831517421
+in hostem		had weight: 0.00307432562113
+est quoniam		had weight: 0.00306946807541
+se ad		had weight: 0.00306370225735
+et de		had weight: 0.00305885029957
+cum se		had weight: 0.0030379248783
+quae mihi		had weight: 0.00303020956926
+quam non		had weight: 0.00302753015421
+quo te		had weight: 0.00302035082132
+ergo in		had weight: 0.00301677081734
+quae tibi		had weight: 0.00299317203462
+hoc enim		had weight: 0.00298985256813
+ecce autem		had weight: 0.00298543297686
+de eo		had weight: 0.0029782296624
+si cum		had weight: 0.00297136045992
+sed quae		had weight: 0.00295753590763
+ut iam		had weight: 0.00295602180995
+est pro		had weight: 0.0029324630741
+iam de		had weight: 0.00293165631592
+fecit et		had weight: 0.00290567381307
+in lucem		had weight: 0.00290318578482
+non ante		had weight: 0.00288981664926
+et nobis		had weight: 0.00285694515333
+ex me		had weight: 0.00284588406794
+tu tamen		had weight: 0.0028340399731
+sed ut		had weight: 0.00281239231117
+in uno		had weight: 0.00280623184517
+qua non		had weight: 0.0027966441121
+nisi ut		had weight: 0.00277041760273
+et simul		had weight: 0.00273849023506
+in te		had weight: 0.00268688099459
+et ne		had weight: 0.00267602922395
+si res		had weight: 0.00264179636724
+me ut		had weight: 0.00262303114869
+ex quo		had weight: 0.00261070672423
+est si		had weight: 0.00260081514716
+quibus est		had weight: 0.00255329953507
+nescio quid		had weight: 0.00253985403106
+sit quam		had weight: 0.00253403070383
+et eorum		had weight: 0.00253293989226
+id enim		had weight: 0.00247122556902
+quam te		had weight: 0.00244452315383
+in iis		had weight: 0.00241816369817
+se in		had weight: 0.0023816677276
+et illud		had weight: 0.00236316234805
+non posset		had weight: 0.00233779125847
+tu quoque		had weight: 0.00231996690854
+hoc quod		had weight: 0.00229161628522
+in omnes		had weight: 0.00227657565847
+non esse		had weight: 0.00227385340258
+cum hoc		had weight: 0.00220539979637
+de qua		had weight: 0.00219563697465
+qui pro		had weight: 0.00217707455158
+quam primum		had weight: 0.00216737948358
+et ob		had weight: 0.0021522664465
+ex re		had weight: 0.0021411140915
+est tibi		had weight: 0.00208409293555
+ac ne		had weight: 0.00205493345857
+hoc esse		had weight: 0.00205189059488
+omnibus et		had weight: 0.00205027451739
+aut certe		had weight: 0.00204153405502
+est igitur		had weight: 0.00198633084074
+ut illa		had weight: 0.00196559960023
+qua in		had weight: 0.00193996611051
+sg72 similarWord: thrasylli		had weight: 0.00193384452723
+sg80 similarWord: retinet		had weight: 0.00190559681505
+qui iam		had weight: 0.00182507524733
+haec cum		had weight: 0.00179426756222
+nec mihi		had weight: 0.00176353112329
+tamen est		had weight: 0.00175628066063
+id quidem		had weight: 0.00174949597567
+illi qui		had weight: 0.0017380702775
+si esset		had weight: 0.00171569373924
+ut ne		had weight: 0.00169615691993
+cum de		had weight: 0.00165800645482
+nam qui		had weight: 0.00161701452453
+ut ait		had weight: 0.00161035580095
+haec quoque		had weight: 0.00158505048603
+non amplius		had weight: 0.00156695616897
+hoc quidem		had weight: 0.00155223393813
+aliquid in		had weight: 0.0015508888755
+dubito quin		had weight: 0.00154917722102
+potest quod		had weight: 0.00154634017963
+ob rem		had weight: 0.00148452888243
+quod nihil		had weight: 0.00144740089308
+modo in		had weight: 0.00141968857497
+omnia quae		had weight: 0.00141264824197
+ut pro		had weight: 0.00140394328628
+in toto		had weight: 0.00136570516042
+est nec		had weight: 0.00135017873254
+ut id		had weight: 0.00133835279848
+in illo		had weight: 0.0013308521593
+aut quo		had weight: 0.00132013403345
+sg67 similarWord: inponuntur		had weight: 0.0013125310652
+non iam		had weight: 0.00130152108613
+ad urbem		had weight: 0.00127639609855
+est ut		had weight: 0.001251159003
+nam et		had weight: 0.0012273513712
+si quid in		had weight: 0.00122674065642
+in usu		had weight: 0.00118727376685
+esse ut		had weight: 0.00117757695261
+in utramque		had weight: 0.00114254513755
+illud quidem		had weight: 0.00107787258457
+haec et		had weight: 0.00107356952503
+est aliud		had weight: 0.00107203552034
+ut tu		had weight: 0.00105207343586
+quo in		had weight: 0.00102150160819
+ex illa		had weight: 0.000989679829217
+tam diu		had weight: 0.000983532401733
+fuit cum		had weight: 0.000969936896581
+et nihil		had weight: 0.000959702243563
+igitur ut		had weight: 0.00095906649949
+id ipsum		had weight: 0.000939340621699
+vero etiam		had weight: 0.00093517289497
+homines et		had weight: 0.000901514955331
+hoc unum		had weight: 0.00087641767459
+ac per		had weight: 0.000861068954691
+una cum		had weight: 0.000848637428135
+et hanc		had weight: 0.000819322129246
+sg58 similarWord: perspicuum		had weight: 0.000782540300861
+quin etiam		had weight: 0.000777266570367
+est ea		had weight: 0.000756974623073
+quae sit		had weight: 0.000743576558307
+te si		had weight: 0.000739417038858
+fore ut		had weight: 0.000677692820318
+apud te		had weight: 0.000660649093334
+ne tu		had weight: 0.000639172969386
+quam ipse		had weight: 0.000614366319496
+est tam		had weight: 0.000525600044057
+his quae		had weight: 0.000474921165733
+non enim		had weight: 0.000457564165117
+quae maxime		had weight: 0.000452129694168
+ex his		had weight: 0.000435493333498
+modo non		had weight: 0.000417759030825
+sg128 similarWord: reseranda		had weight: 0.000403605023166
+aut quod		had weight: 0.000402068602853
+hoc solum		had weight: 0.000396012619603
+se non		had weight: 0.000389754335629
+nisi quod		had weight: 0.000372518697986
+nescio quo		had weight: 0.000371548143448
+ad id		had weight: 0.000339255726431
+potius quam		had weight: 0.000328337686369
+etiam quae		had weight: 0.000304663350107
+ego me		had weight: 0.000288105744403
+quid igitur		had weight: 0.000282375316601
+quos non		had weight: 0.000253515609074
+de omnibus		had weight: 0.000252492463915
+mihi videtur		had weight: 0.000246708019404
+si ita		had weight: 0.000229107143241
+qui ante		had weight: 0.000225708368816
+in parte		had weight: 0.000215860054595
+fuit quod		had weight: 0.000204473297345
+nisi in		had weight: 0.000200759823201
+potest esse		had weight: 0.000193530708202
+quae tu		had weight: 0.000193422340089
+sg45 similarWord: socratis		had weight: 0.00019113131566
+sed de		had weight: 0.000183620926691
+tibi sit		had weight: 0.000169610968442
+haec ubi		had weight: 0.000156904381583
+non erat		had weight: 0.000153319604578
+omnia in		had weight: 0.000151551488671
+si iam		had weight: 0.000151521133375
+et rerum		had weight: 0.000151109488797
+manus et		had weight: 0.000147186059621
+quae neque		had weight: 0.000143685741932
+tamen ille		had weight: 0.000136987786391
+quod nec		had weight: 0.000133336594445
+sg30 similarWord: minis		had weight: 0.000132057000883
+animi et		had weight: 0.000129419655423
+est illa		had weight: 0.00012067922944
+potest ut		had weight: 0.0001205843364
+et quamquam		had weight: 0.0001200488623
+ut ipse		had weight: 0.000118012423627
+causa non		had weight: 8.50724609336e-05
+aut de		had weight: 8.17288164399e-05
+nos in		had weight: 8.15818275441e-05
+sint et		had weight: 7.64377909945e-05
+inter se		had weight: 6.63394675939e-05
+dicendum est		had weight: 5.61169108551e-05
+per urbem		had weight: 5.60261651117e-05
+ut ita		had weight: 5.51053853997e-05
+pro te		had weight: 4.90940765303e-05
+est id		had weight: 4.34126523032e-05
+sg181 similarWord: perpetua		had weight: 3.78066542908e-05
+sit sed		had weight: 1.63223612617e-05
+ex quibus		had weight: 1.43799152283e-05
+ut quidam		had weight: 1.42164253703e-05
+ita si		had weight: 5.18619617651e-06
+potest in		had weight: -8.03600778454e-06
+magis est		had weight: -1.35665823109e-05
+tantum in		had weight: -1.42137287185e-05
+in illis		had weight: -3.26641493302e-05
+quam se		had weight: -4.31503613072e-05
+ut aut		had weight: -4.4136075303e-05
+in alto		had weight: -4.59635994048e-05
+quae me		had weight: -5.40054788871e-05
+nihil enim		had weight: -5.83689725318e-05
+quod ex		had weight: -7.38221569918e-05
+qui aut		had weight: -8.37467523525e-05
+fieri potest		had weight: -8.99546212167e-05
+quam maxime		had weight: -0.000107483436295
+quidem cum		had weight: -0.000108452666609
+paulo ante		had weight: -0.000121544959256
+est autem		had weight: -0.000125843187561
+nihilo minus		had weight: -0.000156702066306
+non poterat		had weight: -0.000161715666763
+ut saepe		had weight: -0.000195344749955
+nunc etiam		had weight: -0.000197043234948
+hoc est		had weight: -0.000197820569156
+ante oculos		had weight: -0.00020677424618
+ut per		had weight: -0.00020722586487
+di immortales		had weight: -0.000212820246816
+ab iis		had weight: -0.000216402972001
+quid est quod		had weight: -0.000229472134379
+non ita		had weight: -0.000231609126786
+tibi de		had weight: -0.000234310849919
+se ipse		had weight: -0.000269273237791
+ad eam		had weight: -0.000291078787996
+etiam in		had weight: -0.000296141806757
+ad usum		had weight: -0.00031674769707
+et ipsa		had weight: -0.00031786726322
+sed ea		had weight: -0.00037915923167
+erit in		had weight: -0.000382010854082
+est quin		had weight: -0.000387197738746
+in auras		had weight: -0.000393102236558
+te mihi		had weight: -0.000396260758862
+praesertim cum		had weight: -0.000399619631935
+in ipsa		had weight: -0.000400110788178
+sit quod		had weight: -0.00041724689072
+quam quod		had weight: -0.000424314872362
+tamen si		had weight: -0.000434965186287
+ut supra		had weight: -0.000441850104835
+est atque		had weight: -0.000455598492408
+et nos		had weight: -0.000457655463833
+inter haec		had weight: -0.00048098291154
+nisi cum		had weight: -0.000496124208439
+cui non		had weight: -0.000496240449138
+et quasi		had weight: -0.000511899474077
+in quam		had weight: -0.000557259598281
+ut si		had weight: -0.000561356428079
+est ne		had weight: -0.000573346507736
+nec ulla		had weight: -0.000574459671043
+ergo et		had weight: -0.000582116190344
+cum ad		had weight: -0.00059854099527
+aliquid quod		had weight: -0.000599984487053
+est iam		had weight: -0.000650825153571
+usus est		had weight: -0.000651718815789
+non sine		had weight: -0.00068077450851
+esset et		had weight: -0.000686806451995
+eum in		had weight: -0.000697536568623
+quod apud		had weight: -0.000701133161783
+est cur		had weight: -0.000706006365363
+sg77 similarWord: auri		had weight: -0.000722489319742
+enim te		had weight: -0.000729569408577
+quod fieri		had weight: -0.000734663684852
+dies et		had weight: -0.000749431143049
+sed per		had weight: -0.00076190388063
+quo modo		had weight: -0.000789191573858
+haec autem		had weight: -0.000813499500509
+de se		had weight: -0.00082935357932
+dicere non		had weight: -0.000844885595143
+non fuisse		had weight: -0.000869484443683
+sit ut		had weight: -0.000878468155861
+cum me		had weight: -0.000881066196598
+cuius rei		had weight: -0.000897354853805
+quam ut		had weight: -0.000898273137864
+eum non		had weight: -0.00092305499129
+omnes et		had weight: -0.000924998777919
+post haec		had weight: -0.000926987908315
+sunt ex		had weight: -0.000930512731429
+id esse		had weight: -0.000946154817939
+Idem		had weight: -0.000956356350798
+ausus est		had weight: -0.000961852434557
+ab hac		had weight: -0.00096808973467
+te in		had weight: -0.00103165849578
+ut hoc		had weight: -0.00105032802094
+causa in		had weight: -0.00105291046202
+sint in		had weight: -0.00107852299698
+non fuit		had weight: -0.00109317793977
+non satis		had weight: -0.00113919179421
+potest non		had weight: -0.00115708482917
+non quod		had weight: -0.00115917040966
+ex eo quod		had weight: -0.00121142086573
+qui modo		had weight: -0.00121557025705
+etsi non		had weight: -0.0012221763609
+autem cum		had weight: -0.00125835812651
+ut quam		had weight: -0.00128789490554
+potest sed		had weight: -0.00130309781525
+erat enim		had weight: -0.00135124498047
+per quae		had weight: -0.00142362690531
+est opus		had weight: -0.00144155009184
+tamen hoc		had weight: -0.00144755362999
+et hic		had weight: -0.00144767947495
+factum esse		had weight: -0.00147979159374
+et sic		had weight: -0.00151220837142
+non aliter		had weight: -0.00151387148071
+est nam		had weight: -0.00151583075058
+est enim		had weight: -0.00151603820268
+ut primum		had weight: -0.00156575161964
+haec omnia		had weight: -0.00158583861776
+erit et		had weight: -0.00159250001889
+quo magis		had weight: -0.0016064333031
+in nostris		had weight: -0.00162012455985
+in urbe		had weight: -0.00162126880605
+quam ab		had weight: -0.00164270796813
+quam quae		had weight: -0.0016545424005
+atque inter		had weight: -0.00165621272754
+rem publicam		had weight: -0.00165951205418
+omnes in		had weight: -0.00167824758682
+si tu		had weight: -0.00168398034293
+non cum		had weight: -0.0016861865297
+ubi sit		had weight: -0.00171395263169
+quod iam		had weight: -0.0017246925272
+multis et		had weight: -0.00174382841215
+sed cum		had weight: -0.00174623623025
+se cum		had weight: -0.00176450086292
+per quem		had weight: -0.00176817749161
+vel potius		had weight: -0.00177217845339
+quod tibi		had weight: -0.00180362560786
+non habent		had weight: -0.00183256156743
+quoque in		had weight: -0.00183283840306
+ut eius		had weight: -0.00188101560343
+est hic		had weight: -0.00188339862507
+in re publica		had weight: -0.00188882194925
+esse ad		had weight: -0.00190748809837
+haec mihi		had weight: -0.00191608036403
+ipse non		had weight: -0.00191648222972
+autem quae		had weight: -0.00192359020002
+cum id		had weight: -0.00194592832122
+quod ipse		had weight: -0.00194865569938
+in locis		had weight: -0.00196454441175
+ut erat		had weight: -0.00197494449094
+nec iam		had weight: -0.00198665820062
+illud in		had weight: -0.00199276651256
+ex omni		had weight: -0.00201022485271
+si quis		had weight: -0.00203311047517
+sg179 similarWord: cupit		had weight: -0.0020332748536
+est vel		had weight: -0.00207688543014
+et si		had weight: -0.00209406996146
+quo tempore		had weight: -0.0020971361082
+erat sed		had weight: -0.00209774659015
+quae non		had weight: -0.00210557319224
+cum ille		had weight: -0.00210576178506
+qua de		had weight: -0.00211080582812
+est quis		had weight: -0.00211380259134
+hoc genus		had weight: -0.00212972937152
+necesse est		had weight: -0.00213476922363
+eo magis		had weight: -0.00214568385854
+quod ita		had weight: -0.0021620169282
+autem ad		had weight: -0.0021717173513
+ut ego		had weight: -0.00219726818614
+sed in		had weight: -0.00220572226681
+quod nos		had weight: -0.00221112603322
+saepe etiam		had weight: -0.00221895426512
+et illa		had weight: -0.00224139960483
+atque ibi		had weight: -0.00224547903053
+quaedam et		had weight: -0.00227371626534
+de hoc		had weight: -0.00227546878159
+sed iam		had weight: -0.00230279751122
+id quod		had weight: -0.0023217392154
+id non		had weight: -0.0023224435281
+sit aut		had weight: -0.00235232734121
+qui de		had weight: -0.00235571642406
+est ei		had weight: -0.00239947624505
+non potui		had weight: -0.00240138918161
+nec umquam		had weight: -0.00240448792465
+atque ea		had weight: -0.00241189845838
+melius quam		had weight: -0.00246113794856
+vero non		had weight: -0.00246187928133
+quam ex		had weight: -0.00248053576797
+et eo		had weight: -0.00249452376738
+qui tibi		had weight: -0.00250092009082
+cuius in		had weight: -0.00255001219921
+ut dixi		had weight: -0.00255854916759
+facta sunt		had weight: -0.00256433081813
+quidem ut		had weight: -0.00257594604045
+apud me		had weight: -0.00260181538761
+hac re		had weight: -0.00261868955567
+in his		had weight: -0.00263622798957
+is est		had weight: -0.00264711957425
+autem de		had weight: -0.00266637001187
+qui ex		had weight: -0.00268248817883
+sg192 similarWord: uictori		had weight: -0.00269216857851
+cum maxime		had weight: -0.00270912633277
+itaque si		had weight: -0.00272235576995
+non ille		had weight: -0.00273713609204
+in ora		had weight: -0.00275788432918
+est inter		had weight: -0.0027656275779
+tanta est		had weight: -0.00277762161568
+quam ob		had weight: -0.00278238300234
+sin autem		had weight: -0.00278520467691
+quia in		had weight: -0.00279216188937
+ait et		had weight: -0.00282322335988
+in primis		had weight: -0.00284175528213
+re publica		had weight: -0.00284339347854
+mihi non		had weight: -0.00284710316919
+te esse		had weight: -0.00285235862248
+hoc primum		had weight: -0.00286619365215
+in nos		had weight: -0.0029069178272
+enim hoc		had weight: -0.00293399975635
+quid ego		had weight: -0.00293969060294
+sg31 similarWord: potes		had weight: -0.00294474535622
+est ab		had weight: -0.00294944131747
+eum locum		had weight: -0.00296181929298
+inter quos		had weight: -0.00299862818792
+hoc tempore		had weight: -0.00300207175314
+nemo est		had weight: -0.00306548248045
+in nobis		had weight: -0.00308267306536
+non tulit		had weight: -0.00308407959528
+quem ad modum		had weight: -0.00308433733881
+scriptum est		had weight: -0.00309193576686
+propterea quod		had weight: -0.00310685369186
+ut non		had weight: -0.00310837174766
+cum tu		had weight: -0.0031503031496
+illud est		had weight: -0.00315554509871
+id est		had weight: -0.00316081801429
+et quos		had weight: -0.00317033450119
+hoc mihi		had weight: -0.00317349401303
+in utroque		had weight: -0.00318312738091
+sg178 similarWord: unum		had weight: -0.00319196633063
+est apud		had weight: -0.00319552444853
+est ille		had weight: -0.00319747789763
+ab illa		had weight: -0.00319892819971
+si vis		had weight: -0.00320169399492
+hoc genere		had weight: -0.00321815768257
+sed si		had weight: -0.00324344704859
+me cum		had weight: -0.00327019672841
+autem non		had weight: -0.00327238347381
+nec vero		had weight: -0.0032914953772
+sg130 similarWord: siccam		had weight: -0.00329283345491
+ad haec		had weight: -0.00329818553291
+nec minus		had weight: -0.00329967448488
+verum tamen		had weight: -0.00330859329551
+haec quae		had weight: -0.00333578302525
+est aliquid		had weight: -0.00334887346253
+ad terram		had weight: -0.00338259479031
+ad rem		had weight: -0.00339758908376
+atque hoc		had weight: -0.00341557338834
+est cui		had weight: -0.00342267984524
+quae sunt		had weight: -0.00342759862542
+est ac		had weight: -0.00343816867098
+sibi et		had weight: -0.00344091909938
+autem si		had weight: -0.00344248791225
+in civitate		had weight: -0.00345084164292
+autem et		had weight: -0.00345439487137
+est sic		had weight: -0.00345981866121
+pro re		had weight: -0.00346456142142
+ad caelum		had weight: -0.00346978823654
+sine ullo		had weight: -0.00347762531601
+quod tu		had weight: -0.00348218507133
+cum ea		had weight: -0.00348329613917
+illa non		had weight: -0.00349494954571
+ne hoc		had weight: -0.00350871216506
+quoniam in		had weight: -0.00351163628511
+in pectore		had weight: -0.00352735957131
+quod non		had weight: -0.00353383668698
+sit in		had weight: -0.0035380218178
+modo ad		had weight: -0.0035485199187
+ipse in		had weight: -0.00354878627695
+ut mihi		had weight: -0.00355651462451
+omnis in		had weight: -0.00357062090188
+sicut in		had weight: -0.00358786573634
+quam mihi		had weight: -0.00359656754881
+non modo		had weight: -0.00361115694977
+quod ne		had weight: -0.00361348246224
+ut enim		had weight: -0.00362763274461
+etiam non		had weight: -0.00362856430002
+ea est		had weight: -0.00367069803178
+non patitur		had weight: -0.00372188258916
+si haec		had weight: -0.00373311596923
+qui ad		had weight: -0.00376348732971
+sg20 similarWord: impulit		had weight: -0.00376447546296
+modo sed		had weight: -0.00381117337383
+enim si		had weight: -0.0038227555342
+non facile		had weight: -0.00383603200316
+enim quod		had weight: -0.00385109661147
+non oportet		had weight: -0.00389012228698
+quo die		had weight: -0.00390313379467
+et per		had weight: -0.00392988836393
+non ex		had weight: -0.00393770402297
+iam vero		had weight: -0.00394070381299
+quibus non		had weight: -0.00394333526492
+de re publica		had weight: -0.00394594203681
+ita sunt		had weight: -0.0039567775093
+res in		had weight: -0.0039603933692
+ob id		had weight: -0.0039622890763
+est inquit		had weight: -0.00398297887295
+ita esse		had weight: -0.00398936588317
+si ex		had weight: -0.00399270839989
+si ad		had weight: -0.0040396656841
+me et		had weight: -0.00404349062592
+ex omnibus		had weight: -0.00405821343884
+quae de		had weight: -0.00407598074526
+ad populum		had weight: -0.0040761330165
+si in		had weight: -0.00408398639411
+eo ipso		had weight: -0.0040944609791
+eos qui		had weight: -0.00410418771207
+ego de		had weight: -0.00412140088156
+graeci vocant		had weight: -0.00412174500525
+dici potest		had weight: -0.00412243837491
+quod ille		had weight: -0.00412380229682
+sunt quam		had weight: -0.004147880245
+esse et		had weight: -0.0041574453935
+in partem		had weight: -0.00417100498453
+enim ex		had weight: -0.00419996865094
+non multum		had weight: -0.00420749839395
+etiam ut		had weight: -0.00424338877201
+in conspectu		had weight: -0.00425589736551
+qua re		had weight: -0.00426688557491
+quibus et		had weight: -0.00428039953113
+simul ac		had weight: -0.00428782589734
+est an		had weight: -0.0043204636313
+ut haec		had weight: -0.00432786857709
+datum est		had weight: -0.00434165820479
+ut ante		had weight: -0.004346862901
+sit an		had weight: -0.00436040433124
+causa est		had weight: -0.00437456229702
+ego et		had weight: -0.00439311563969
+ab eo		had weight: -0.00441040145233
+cum esset		had weight: -0.00441123778
+est quod		had weight: -0.00442511355504
+tam multa		had weight: -0.00443269219249
+apud eos		had weight: -0.00443944009021
+et non		had weight: -0.00445064855739
+ut quisque		had weight: -0.00445693405345
+si aut		had weight: -0.00446808151901
+in causa		had weight: -0.00447233207524
+causa et		had weight: -0.00448072282597
+et in		had weight: -0.00448128674179
+habet et		had weight: -0.00448695058003
+cum iam		had weight: -0.00450493674725
+vel ad		had weight: -0.0045103742741
+ea re		had weight: -0.00451997807249
+ea res		had weight: -0.00452420208603
+operam ut		had weight: -0.00452589429915
+quod quidem		had weight: -0.00452674087137
+in castris		had weight: -0.00454845884815
+quem tu		had weight: -0.00455751502886
+in mare		had weight: -0.00456688832492
+in rebus		had weight: -0.00458556972444
+esse cum		had weight: -0.00462341262028
+genus et		had weight: -0.00464452430606
+vero in		had weight: -0.00465925922617
+sit non		had weight: -0.004661034327
+non sunt		had weight: -0.00467775715515
+quod is		had weight: -0.00467960815877
+eo die		had weight: -0.00470152916387
+cum haec		had weight: -0.00470169261098
+ne quis		had weight: -0.00471662543714
+et aliis		had weight: -0.0047384086065
+qui nihil		had weight: -0.00474356021732
+autem quod		had weight: -0.00474950997159
+ut eo		had weight: -0.00475467694923
+non esset		had weight: -0.00475878827274
+etiam quam		had weight: -0.00476357992738
+ad te		had weight: -0.00476902816445
+et ex		had weight: -0.00477039441466
+sg33 similarWord: addit		had weight: -0.00477257603779
+nunc ad		had weight: -0.00482830358669
+ut ei		had weight: -0.00483272830024
+nam quod		had weight: -0.00483612390235
+quae prima		had weight: -0.00483738398179
+igitur et		had weight: -0.00484151765704
+qui semper		had weight: -0.00484777893871
+ea parte		had weight: -0.00485601555556
+non quo		had weight: -0.0048812716268
+cum in		had weight: -0.00489474739879
+de te		had weight: -0.00489881727844
+nomen est		had weight: -0.00489934766665
+ex iis		had weight: -0.00490315724164
+in senatum		had weight: -0.00493043055758
+sed haec		had weight: -0.00494297547266
+quod maxime		had weight: -0.0049790837802
+ne ad		had weight: -0.00501147471368
+omnium rerum		had weight: -0.0050193159841
+quidem et		had weight: -0.00502562336624
+ita se		had weight: -0.00503503810614
+eodem tempore		had weight: -0.0050486009568
+cum eo		had weight: -0.00505522172898
+potest et		had weight: -0.00506148999557
+igitur in		had weight: -0.00510042347014
+omnes qui		had weight: -0.00511299306527
+quid ergo		had weight: -0.0051203481853
+etiam si		had weight: -0.00515840668231
+tibi est		had weight: -0.00516048446298
+sg144 similarWord: mundo		had weight: -0.00516299111769
+hoc etiam		had weight: -0.00521202711388
+nulla est		had weight: -0.00523832067847
+te ut		had weight: -0.00527463061735
+nihil in		had weight: -0.00527890352532
+iam non		had weight: -0.0052891978994
+quid aliud		had weight: -0.00530019123107
+sg182 similarWord: togam		had weight: -0.00531521765515
+in italiam		had weight: -0.00531938532367
+quo facilius		had weight: -0.00535329803824
+est nihil		had weight: -0.00535637838766
+ut cum		had weight: -0.00537392869592
+sunt ad		had weight: -0.00539342826232
+de quo		had weight: -0.00540442252532
+sed etiam		had weight: -0.00540760625154
+iis qui		had weight: -0.00543280830607
+si non		had weight: -0.00544409872964
+omnibus quae		had weight: -0.00544777093455
+ut se		had weight: -0.00545422965661
+si modo		had weight: -0.00545694911852
+ut omnia		had weight: -0.00545792886987
+an non		had weight: -0.00546520482749
+sine causa		had weight: -0.00546588515863
+si quod		had weight: -0.00546598667279
+in hoc		had weight: -0.00547326542437
+eum quem		had weight: -0.00550815975294
+esse quod		had weight: -0.00552525743842
+aut etiam		had weight: -0.00552614172921
+quae si		had weight: -0.00554421031848
+apud nos		had weight: -0.00557424966246
+quae et		had weight: -0.00558687094599
+et ea		had weight: -0.00560035277158
+res est		had weight: -0.00560478819534
+alio loco		had weight: -0.00562780397013
+in urbem		had weight: -0.00565888546407
+qui et		had weight: -0.00565906381235
+neque id		had weight: -0.00569881964475
+fieri non		had weight: -0.00571013661101
+inquit et		had weight: -0.00572883524001
+enim sunt		had weight: -0.00573957152665
+id tempus		had weight: -0.00574438786134
+et est		had weight: -0.00575675629079
+ab ipsa		had weight: -0.005759594962
+sg76 similarWord: eos		had weight: -0.0057651293464
+minus in		had weight: -0.00577455805615
+haec ipsa		had weight: -0.00579078681767
+nam ut		had weight: -0.00580049492419
+enim non		had weight: -0.00580623373389
+ex illo		had weight: -0.00583745865151
+eius in		had weight: -0.00584498373792
+ei mihi		had weight: -0.00585074955598
+de hac		had weight: -0.00585104431957
+etiam tum		had weight: -0.005869070068
+de causa		had weight: -0.0058824471198
+ad quam		had weight: -0.0058930949308
+quod erat		had weight: -0.00589661020786
+et tam		had weight: -0.00589911499992
+sg69 similarWord: annosa		had weight: -0.00590101303533
+et omnes		had weight: -0.00590310851112
+ut apud		had weight: -0.00590890273452
+et quia		had weight: -0.00590933300555
+sg129 similarWord: plures		had weight: -0.00591616006568
+aut non		had weight: -0.00593542819843
+sunt et		had weight: -0.00595031492412
+etiam de		had weight: -0.00596628896892
+sunt sed		had weight: -0.00597103638574
+tum etiam		had weight: -0.00597838079557
+aut ad		had weight: -0.00602319277823
+Cum		had weight: -0.00607456499711
+Personal Pronouns		had weight: -0.00609304755926
+et ante		had weight: -0.00609319936484
+certum est		had weight: -0.00611720886081
+ea non		had weight: -0.00615133019164
+quod per		had weight: -0.00616189418361
+ut quod		had weight: -0.00616816058755
+eodem modo		had weight: -0.00620183348656
+sed nunc		had weight: -0.00622276589274
+se et		had weight: -0.00622289767489
+cum est		had weight: -0.00625199312344
+quam in		had weight: -0.00627743452787
+sic in		had weight: -0.00628498801962
+ad quae		had weight: -0.00629625050351
+esse videatur		had weight: -0.00631071161479
+quidem sed		had weight: -0.00633556209505
+si enim		had weight: -0.0063673844561
+si de		had weight: -0.0063697709702
+ut de		had weight: -0.0063824923709
+quod ego		had weight: -0.00638255709782
+sunt aut		had weight: -0.00639200862497
+in quo		had weight: -0.00639231828973
+et inter		had weight: -0.00642563961446
+est qui		had weight: -0.00643520057201
+autem est		had weight: -0.00645878724754
+ad modum		had weight: -0.00647744443268
+omne quod		had weight: -0.00650015706196
+quae in		had weight: -0.00651014549658
+ad vos		had weight: -0.00651390850544
+satis est		had weight: -0.00652668159455
+quas in		had weight: -0.0065271994099
+qui sunt		had weight: -0.00654156925157
+esse qui		had weight: -0.00654213968664
+non sum		had weight: -0.00655567133799
+modo et		had weight: -0.00656877411529
+est neque		had weight: -0.00657076155767
+si mihi		had weight: -0.00657869176939
+sg100 similarWord: hominem		had weight: -0.0065839109011
+quod idem		had weight: -0.00660411547869
+enim de		had weight: -0.00661095930263
+in eo		had weight: -0.0066314637661
+quibus rebus		had weight: -0.00663579208776
+esse si		had weight: -0.00664463965222
+se ipsum		had weight: -0.00665338616818
+fuit quam		had weight: -0.006661972031
+ille non		had weight: -0.00669035734609
+ab his		had weight: -0.00669561419636
+de caelo		had weight: -0.00670575164258
+te ad		had weight: -0.00671722507104
+in id		had weight: -0.00675697252154
+ad omnia		had weight: -0.00676384521648
+sic est		had weight: -0.00676649576053
+ille et		had weight: -0.00681231170893
+ad mortem		had weight: -0.00682210037485
+ego ad		had weight: -0.0068907472305
+nam id		had weight: -0.00692302267998
+quae causa		had weight: -0.00694150850177
+ad summam		had weight: -0.00696031842381
+si id		had weight: -0.00697634881362
+per orbem		had weight: -0.00699620228261
+est per		had weight: -0.00699929520488
+nihil est quod		had weight: -0.00701818289235
+multo magis		had weight: -0.00702090421692
+esse aut		had weight: -0.00704622454941
+non et		had weight: -0.00706397788599
+et multo		had weight: -0.00707605434582
+venit in		had weight: -0.00713406596333
+sunt ut		had weight: -0.00713654141873
+ad nos		had weight: -0.00715540535748
+aut ubi		had weight: -0.00717821530998
+sunt qui		had weight: -0.00718343816698
+me in		had weight: -0.0071853841655
+de more		had weight: -0.00718730501831
+factum est		had weight: -0.00719711184502
+facta est		had weight: -0.00720781553537
+et omnia		had weight: -0.00721803260967
+qui primus		had weight: -0.00721976580098
+sunt quae		had weight: -0.00724620651454
+haec in		had weight: -0.00726684043184
+est etiam		had weight: -0.00730722071603
+quae ab		had weight: -0.00733323488384
+iam tum		had weight: -0.00734825432301
+ut ad		had weight: -0.00736091751605
+et haec		had weight: -0.00736622186378
+inter quae		had weight: -0.00737564824522
+postea quam		had weight: -0.0073845628649
+in agris		had weight: -0.00738460896537
+sunt quibus		had weight: -0.00738762738183
+dixit et		had weight: -0.00740922661498
+nam quid		had weight: -0.00741546787322
+quam nos		had weight: -0.00743127940223
+primum in		had weight: -0.00745331542566
+sit qui		had weight: -0.00745513709262
+sg96 similarWord: orandi		had weight: -0.00750879384577
+atque utinam		had weight: -0.00751434545964
+ut sibi		had weight: -0.00752297416329
+eodem die		had weight: -0.00753515865654
+et sua		had weight: -0.00753876939416
+quem ego		had weight: -0.00754112843424
+in caelum		had weight: -0.0075620226562
+in rem		had weight: -0.00756900105625
+sed quid ego		had weight: -0.00757711194456
+sg41 similarWord: subito		had weight: -0.00758031802252
+sed neque		had weight: -0.00761980051175
+sg121 similarWord: ministrat		had weight: -0.00762804644182
+qui ut		had weight: -0.00763995572925
+qui haec		had weight: -0.00764857232571
+adeo ut		had weight: -0.00768015859649
+non quia		had weight: -0.00769837712869
+in acie		had weight: -0.00771338958293
+si quid		had weight: -0.00774499634281
+hoc tibi		had weight: -0.00775626860559
+et quod		had weight: -0.00780035648495
+his rebus		had weight: -0.00780432997271
+ne forte		had weight: -0.0078114811331
+de quibus		had weight: -0.00782096944749
+non potuit		had weight: -0.00784075073898
+sunt autem		had weight: -0.00784814637154
+sg48 similarWord: diripit		had weight: -0.00785751920193
+in re		had weight: -0.00786136742681
+tibi et		had weight: -0.00786278676242
+utramque partem		had weight: -0.00786721985787
+enim ad		had weight: -0.00786788482219
+ut etiam		had weight: -0.0078959222883
+sunt non		had weight: -0.00790083687752
+fuit et		had weight: -0.00790821481496
+quae est		had weight: -0.00792756024748
+non potuisse		had weight: -0.00794346816838
+sg201 similarWord: caritatis		had weight: -0.00794520135969
+quod mihi		had weight: -0.00794989801943
+itaque non		had weight: -0.00796119868755
+qui sit		had weight: -0.00796173140407
+immo vero		had weight: -0.00797042250633
+in genere		had weight: -0.0079910941422
+senatus consulto		had weight: -0.0080088255927
+posita est		had weight: -0.00802651047707
+ab hoste		had weight: -0.00803234428167
+sed hoc		had weight: -0.00804231036454
+ab imo		had weight: -0.0080672679469
+debet esse		had weight: -0.00808630790561
+rebus et		had weight: -0.00810133293271
+ipse quoque		had weight: -0.00810824241489
+quidem in		had weight: -0.00811910349876
+itaque cum		had weight: -0.00812342576683
+et quibus		had weight: -0.0081438170746
+est sed		had weight: -0.00815521925688
+et omni		had weight: -0.00815986283123
+tamen non		had weight: -0.00816383864731
+si ab		had weight: -0.00816425215453
+sg98 similarWord: instituere		had weight: -0.00816702563316
+et ut		had weight: -0.0081674978137
+est satis		had weight: -0.00817209668458
+non possunt		had weight: -0.00817386154085
+si forte		had weight: -0.0081805838272
+ex eo		had weight: -0.00822606030852
+sg116 similarWord: ulciscendi		had weight: -0.00823848508298
+ut me		had weight: -0.00823893770576
+non possum		had weight: -0.0082439398393
+sed mihi		had weight: -0.00824854057282
+etiam ex		had weight: -0.00825813505799
+nam si		had weight: -0.00826193857938
+sg139 similarWord: linea		had weight: -0.00827516615391
+in ceteris		had weight: -0.00829219352454
+fuit qui		had weight: -0.0082968659699
+sg156 similarWord: severo		had weight: -0.00830513332039
+et summa		had weight: -0.00833104830235
+in ipso		had weight: -0.0083419047296
+de re		had weight: -0.00836464110762
+cum his		had weight: -0.00836529769003
+homo est		had weight: -0.00842362083495
+quidem non		had weight: -0.00842378009111
+in castra		had weight: -0.00842378754169
+in litore		had weight: -0.00843300111592
+quem ad		had weight: -0.00844054948539
+per quos		had weight: -0.00845307018608
+Ut		had weight: -0.00847817584872
+cum omnibus		had weight: -0.00848011206836
+ad aures		had weight: -0.00849554780871
+ut ille		had weight: -0.00852619484067
+etiam qui		had weight: -0.00854730140418
+non sit		had weight: -0.00855717808008
+quod me		had weight: -0.00856892578304
+sua sponte		had weight: -0.00857000425458
+enim qui		had weight: -0.00857524760067
+si et		had weight: -0.0085825510323
+ad me		had weight: -0.00858489517123
+etiam nunc		had weight: -0.00859605055302
+cum mihi		had weight: -0.008620002307
+quoquo modo		had weight: -0.0086257904768
+eo tempore		had weight: -0.00862889364362
+quo minus		had weight: -0.00864221341908
+est ergo		had weight: -0.00868086423725
+et post		had weight: -0.00871397461742
+neque me		had weight: -0.00872000306845
+quod est		had weight: -0.00872789975256
+sit cum		had weight: -0.00872828904539
+idem quod		had weight: -0.00873687677085
+ante quam		had weight: -0.00875497795641
+populum romanum		had weight: -0.00876464787871
+inter nos		had weight: -0.00877213291824
+non nulli		had weight: -0.0088043641299
+in omni		had weight: -0.00880711618811
+eius qui		had weight: -0.00882797408849
+quae cum		had weight: -0.00882944278419
+ut sit		had weight: -0.00883143302053
+ad eos		had weight: -0.0088571626693
+esset in		had weight: -0.00887543894351
+in summa		had weight: -0.00888991262764
+tamen ad		had weight: -0.00891193281859
+multo post		had weight: -0.00893355719745
+non per		had weight: -0.00893630739301
+nec tibi		had weight: -0.00894216448069
+fit ut		had weight: -0.00895242765546
+sed quo		had weight: -0.00900794845074
+sic et		had weight: -0.00901294033974
+quae res		had weight: -0.00903724785894
+ii qui		had weight: -0.00904962327331
+quasi in		had weight: -0.00906845834106
+postero die		had weight: -0.00908411853015
+Superlatives		had weight: -0.00909096561372
+aut in		had weight: -0.00911641865969
+modo ut		had weight: -0.00912545248866
+sed qui		had weight: -0.00914723426104
+quae nunc		had weight: -0.00916312169284
+quod ad		had weight: -0.00918264593929
+quod enim		had weight: -0.0092129856348
+sg134 similarWord: adferam		had weight: -0.00923699419945
+ad senatum		had weight: -0.00934998970479
+de illo		had weight: -0.00935226585716
+non licet		had weight: -0.00936912372708
+non es		had weight: -0.00938163325191
+sg164 similarWord: nummorum		had weight: -0.00939748901874
+et quae		had weight: -0.00941192451864
+populi romani		had weight: -0.0094170505181
+de causis		had weight: -0.0094345882535
+est in		had weight: -0.00946406181902
+usque eo		had weight: -0.00948542263359
+hoc in		had weight: -0.00952398777008
+etiam illud		had weight: -0.00955233722925
+cum per		had weight: -0.00960966106504
+de his		had weight: -0.0096187889576
+in armis		had weight: -0.0096195274964
+ita est		had weight: -0.0096288099885
+sine ulla		had weight: -0.00962928961962
+unum in		had weight: -0.00965925306082
+id genus		had weight: -0.00966186914593
+sed quod		had weight: -0.0096745910123
+ne quod		had weight: -0.00967647600919
+quae ut		had weight: -0.00969488080591
+est quae		had weight: -0.00970416236669
+cum primum		had weight: -0.00971399527043
+erat et		had weight: -0.00971541274339
+de nobis		had weight: -0.0097182802856
+quodam modo		had weight: -0.00974376127124
+est cuius		had weight: -0.00978967361152
+et quam		had weight: -0.00979333184659
+deinde in		had weight: -0.00979960151017
+solum sed		had weight: -0.00980250164866
+iis quae		had weight: -0.00981177203357
+cum et		had weight: -0.00983007438481
+sg151 similarWord: diemque		had weight: -0.00987303443253
+ad eum		had weight: -0.00988030619919
+sunt si		had weight: -0.00991954654455
+pro me		had weight: -0.0099362609908
+qui etiam		had weight: -0.00996236596256
+quam cum		had weight: -0.00997257232666
+quam qui		had weight: -0.00998288113624
+etiam et		had weight: -0.00998501013964
+ab alto		had weight: -0.00999069865793
+rerum natura		had weight: -0.00999523513019
+quidem est		had weight: -0.0100003415719
+me quoque		had weight: -0.0100027862936
+enim cum		had weight: -0.0100177628919
+de rebus		had weight: -0.0100191757083
+illud quod		had weight: -0.0100318631157
+simul et		had weight: -0.0100559089333
+in agro		had weight: -0.0100600095466
+Quidam		had weight: -0.0100694103166
+itaque in		had weight: -0.0100918989629
+in altum		had weight: -0.0101046226919
+tantum sed		had weight: -0.0101212048903
+nisi forte		had weight: -0.0101236365736
+in quem		had weight: -0.0101583842188
+quid tu		had weight: -0.0101696066558
+quod ea		had weight: -0.0101918177679
+sg70 similarWord: humilitatem		had weight: -0.0102145876735
+ad quod		had weight: -0.0102297328413
+haec ego		had weight: -0.0102394344285
+minus quam		had weight: -0.0102459099144
+in loco		had weight: -0.0102734714746
+nihil de		had weight: -0.0102797020227
+enim ut		had weight: -0.0102976169437
+ad quos		had weight: -0.0103147849441
+quod nunc		had weight: -0.0103270765394
+haec est		had weight: -0.0103333266452
+ne aut		had weight: -0.0103426808491
+hic tibi		had weight: -0.0103516494855
+vero cum		had weight: -0.0103521700948
+et his		had weight: -0.0103561915457
+sed tu		had weight: -0.0103975338861
+si quem		had weight: -0.0104030091316
+si ut		had weight: -0.0104157011956
+quod inter		had weight: -0.0104250460863
+non posse		had weight: -0.0104333143681
+ita ut		had weight: -0.010463683866
+et eius		had weight: -0.0104767140001
+sg74 similarWord: rapiunt		had weight: -0.010511812754
+populo romano		had weight: -0.0105658425018
+mihi si		had weight: -0.0105767697096
+autem hoc		had weight: -0.0106043703854
+est nobis		had weight: -0.0106169637293
+et illi		had weight: -0.0106558762491
+sunt omnia		had weight: -0.0106768757105
+sit ad		had weight: -0.010682660155
+est quo		had weight: -0.01068649441
+ad se		had weight: -0.0107064461336
+utraque parte		had weight: -0.0107087260112
+sunt quid		had weight: -0.0107328696176
+eo quod		had weight: -0.0107518192381
+quod autem		had weight: -0.0107828229666
+in posterum		had weight: -0.0107843969017
+quoque et		had weight: -0.0107861161232
+cum ipse		had weight: -0.010787406005
+verum etiam		had weight: -0.0108266612515
+in proelia		had weight: -0.0108343604952
+ad quem		had weight: -0.0108383465558
+quid cum		had weight: -0.0108582759276
+non nisi		had weight: -0.0109184747562
+ad hunc		had weight: -0.0109223099425
+visa est		had weight: -0.0109534692019
+enim se		had weight: -0.0109740542248
+nunc tibi		had weight: -0.010979575105
+nunc vero		had weight: -0.0109810354188
+autem in		had weight: -0.0109910005704
+cum omnia		had weight: -0.0110138813034
+et esse		had weight: -0.0110229728743
+autem qui		had weight: -0.011034806259
+est ubi		had weight: -0.0110348341987
+esse debet		had weight: -0.0110569922253
+esse quam		had weight: -0.0111364619806
+me ad		had weight: -0.0111735695973
+te et		had weight: -0.0112007036805
+et sibi		had weight: -0.0112076504156
+et magno		had weight: -0.0112115843222
+in hanc		had weight: -0.0112306810915
+et is		had weight: -0.0112355267629
+haec ad		had weight: -0.0113074406981
+hoc idem		had weight: -0.0113411769271
+sic ut		had weight: -0.0113802691922
+res et		had weight: -0.0113838491961
+sg52 similarWord: lorica		had weight: -0.0114142168313
+enim me		had weight: -0.0114157842472
+et semper		had weight: -0.011449993588
+in qua		had weight: -0.0114583307877
+quod et		had weight: -0.0114686079323
+fuit non		had weight: -0.0114735029638
+in summo		had weight: -0.0115014081821
+in manibus		had weight: -0.0115083670244
+nisi si		had weight: -0.011510996148
+quod de		had weight: -0.0115313334391
+eorum quae		had weight: -0.0115592256188
+quae etiam		had weight: -0.0115668373182
+ut qui		had weight: -0.0115962605923
+non potest		had weight: -0.0116146933287
+cum autem		had weight: -0.0116175990552
+cum quibus		had weight: -0.0116340238601
+sg57 similarWord: locos		had weight: -0.0116616757587
+enim iam		had weight: -0.0116650890559
+iam ad		had weight: -0.0116690173745
+tum demum		had weight: -0.0116784647107
+non ut		had weight: -0.0116810221225
+haec eadem		had weight: -0.0116892904043
+in hac		had weight: -0.0117063587531
+et ideo		had weight: -0.0117064211518
+si est		had weight: -0.0117146577686
+Quin		had weight: -0.0117174200714
+ut in		had weight: -0.0117796640843
+in hunc		had weight: -0.0118167586625
+sed enim		had weight: -0.0118280677125
+quae quidem		had weight: -0.0118390880525
+aut ex		had weight: -0.0118617732078
+ante pedes		had weight: -0.0118904560804
+in italia		had weight: -0.0119186602533
+in eodem		had weight: -0.0119225187227
+omnia et		had weight: -0.0119391782209
+esse potest		had weight: -0.0119598517194
+quam id		had weight: -0.0119703579694
+quod se		had weight: -0.0120015982538
+et qui		had weight: -0.0120057584718
+fuit sed		had weight: -0.0120376497507
+magis quod		had weight: -0.0120526328683
+est et		had weight: -0.0120860906318
+ad eas		had weight: -0.0121070314199
+usque in		had weight: -0.0121205458418
+enim mihi		had weight: -0.0121215274557
+ut eos		had weight: -0.0121435532346
+sine me		had weight: -0.0121540063992
+sunt haec		had weight: -0.0121700288728
+aliter quam		had weight: -0.0121898492798
+et dum		had weight: -0.0122032724321
+me esse		had weight: -0.0122064957395
+etiam sine		had weight: -0.0122190872207
+sunt in		had weight: -0.0122399404645
+quo pacto		had weight: -0.0122690685093
+hoc ipso		had weight: -0.0122777130455
+ille quidem		had weight: -0.0123621486127
+at tu		had weight: -0.012385033071
+quod sit		had weight: -0.0123949777335
+et alia		had weight: -0.0123964212835
+sunt etiam		had weight: -0.0124107543379
+natura et		had weight: -0.0124215800315
+nihil nisi		had weight: -0.0125732487068
+ut omnes		had weight: -0.0125878509134
+nos et		had weight: -0.0125935999677
+quidem quae		had weight: -0.012636885047
+et quidem		had weight: -0.0126391975209
+ex animo		had weight: -0.0126497298479
+in perpetuum		had weight: -0.0126763144508
+cum ex		had weight: -0.0128274457529
+abs te		had weight: -0.0128337088972
+et ipse		had weight: -0.0128620034084
+nam cum		had weight: -0.0128823714331
+sg17 similarWord: multisque		had weight: -0.0128859085962
+qui tum		had weight: -0.0128935463727
+mihi est		had weight: -0.0129083776847
+est aut		had weight: -0.0129128675908
+omnibus rebus		had weight: -0.0129134561867
+quod eum		had weight: -0.0129141369835
+dicta sunt		had weight: -0.0129228373989
+non possumus		had weight: -0.0129264341667
+in senatu		had weight: -0.0129276057705
+in foro		had weight: -0.0129398228601
+ut eum		had weight: -0.0129478257149
+aliquid ex		had weight: -0.0129527887329
+non ab		had weight: -0.0129660414532
+hoc ut		had weight: -0.0130030000582
+qui hoc		had weight: -0.0130255166441
+quam ob rem		had weight: -0.0130299562588
+et ego		had weight: -0.0130816716701
+Mean Sentence Length		had weight: -0.0131279863417
+sunt cum		had weight: -0.0131326392293
+sed et		had weight: -0.0132450889796
+in se		had weight: -0.013246239163
+nunc et		had weight: -0.0132813742384
+quod in		had weight: -0.0133633827791
+eos quos		had weight: -0.0133834229782
+plus quam		had weight: -0.0134040061384
+in eos		had weight: -0.0134163470939
+sg79 similarWord: nee		had weight: -0.0134515119717
+et inde		had weight: -0.0134526994079
+magis quam		had weight: -0.0134614063427
+ab omni		had weight: -0.0135163115337
+ei qui		had weight: -0.0135292652994
+Alius		had weight: -0.0135318795219
+non mihi		had weight: -0.013561906293
+non modo non		had weight: -0.0136002087966
+eius et		had weight: -0.0136004164815
+hoc te		had weight: -0.0136073101312
+quantum in		had weight: -0.0136185269803
+non dico		had weight: -0.0136398598552
+et ceteris		had weight: -0.0136949876323
+qua ratione		had weight: -0.0137262521312
+nec tam		had weight: -0.013745485805
+qui autem		had weight: -0.0137477545068
+ut et		had weight: -0.0137522825971
+et quicquid		had weight: -0.0137549247593
+sunt enim		had weight: -0.0137856239453
+sed etiam in		had weight: -0.0137961870059
+hoc ipsum		had weight: -0.0138560328633
+id quoque		had weight: -0.013894229196
+primum quod		had weight: -0.0139182601124
+in sua		had weight: -0.0139350406826
+non si		had weight: -0.0140089197084
+rei causa		had weight: -0.0140202324837
+ex te		had weight: -0.0140630090609
+aliud quam		had weight: -0.0140720857307
+et ipsi		had weight: -0.0141320386901
+ille in		had weight: -0.0141655895859
+res ipsa		had weight: -0.0141671849415
+quod aut		had weight: -0.0141758164391
+ne id		had weight: -0.0141790313646
+rerum et		had weight: -0.0141832903028
+in illum		had weight: -0.0141903553158
+enim tibi		had weight: -0.0142241036519
+post terga		had weight: -0.0142348939553
+nobis et		had weight: -0.0142380781472
+ut inter		had weight: -0.014262534678
+et adhuc		had weight: -0.0142745953053
+si ea		had weight: -0.0143214045092
+ista quae		had weight: -0.0143662728369
+cum ita		had weight: -0.0144138252363
+ab ea		had weight: -0.0144262323156
+tamen ut		had weight: -0.014466564171
+sg101 similarWord: quantumque		had weight: -0.0144719993696
+deinde cum		had weight: -0.0145188597962
+eo qui		had weight: -0.014529876411
+sed ex		had weight: -0.0145397745073
+quis non		had weight: -0.0145758287981
+ut ab		had weight: -0.0145941060036
+quod neque		had weight: -0.0145963039249
+sg85 similarWord: plagis		had weight: -0.0146033028141
+esset non		had weight: -0.0146065279841
+eorum qui		had weight: -0.0146700618789
+esse sed		had weight: -0.0146827492863
+eo loco		had weight: -0.0147752184421
+si ille		had weight: -0.0147954877466
+sg7 similarWord: hiemes		had weight: -0.014797821641
+sg56 similarWord: exeamus		had weight: -0.0148292127997
+cum enim		had weight: -0.0148424971849
+nihil umquam		had weight: -0.0148532027379
+aliquid de		had weight: -0.014889838174
+eius rei		had weight: -0.0148902582005
+in eo quod		had weight: -0.014900393784
+in suo		had weight: -0.0149043900892
+sunt nam		had weight: -0.0149401733652
+esse in		had weight: -0.0149700744078
+neque tamen		had weight: -0.0149729857221
+quod etiam		had weight: -0.0150268441066
+multa et		had weight: -0.0150311682373
+quae iam		had weight: -0.0150795662776
+non de		had weight: -0.0150814168155
+et omnis		had weight: -0.0150909880176
+ad ea		had weight: -0.0151191484183
+hoc modo		had weight: -0.0151382051408
+enim tam		had weight: -0.0151450186968
+ex hoc		had weight: -0.0151550928131
+sg176 similarWord: vincula		had weight: -0.0152063407004
+etiam atque		had weight: -0.0152112673968
+si qua		had weight: -0.0153213497251
+nihil aliud		had weight: -0.0154429757968
+id in		had weight: -0.015455044806
+ut opinor		had weight: -0.0154602769762
+cum sit		had weight: -0.0154836485162
+ratio est		had weight: -0.0154892019928
+in eius		had weight: -0.0154910180718
+sg115 similarWord: aiebant		had weight: -0.015506288968
+ut is		had weight: -0.0155155770481
+ad illum		had weight: -0.015522936359
+etiam ad		had weight: -0.0155798010528
+in ista		had weight: -0.0155938798562
+in domo		had weight: -0.0156219089404
+quod ut		had weight: -0.0156225971878
+tantum modo		had weight: -0.0156239261851
+tu non		had weight: -0.0156360883266
+natus est		had weight: -0.0156435165554
+quam ego		had weight: -0.0156677886844
+sg131 similarWord: laberius		had weight: -0.0157073307782
+quod cum		had weight: -0.0157082397491
+quod ei		had weight: -0.0157126747072
+est illud		had weight: -0.0157377365977
+de iis		had weight: -0.0157434605062
+nunc mihi		had weight: -0.0157469250262
+in hispania		had weight: -0.0157842710614
+et cum		had weight: -0.0158445872366
+qui ab		had weight: -0.0158918574452
+nec ad		had weight: -0.0159179512411
+et idem		had weight: -0.0159626547247
+est ita		had weight: -0.015988284722
+iam et		had weight: -0.0160119291395
+ut nihil		had weight: -0.0160181578249
+qui cum		had weight: -0.0160396955907
+semper in		had weight: -0.0160764418542
+in eum		had weight: -0.0161944162101
+vel etiam		had weight: -0.0162042416632
+atque ego		had weight: -0.0162762627006
+non numquam		had weight: -0.0163500551134
+et ille		had weight: -0.0163502413779
+non potes		had weight: -0.0163726657629
+usque ad		had weight: -0.0164299923927
+sg154 similarWord: multae		had weight: -0.0164402425289
+tamen quod		had weight: -0.016441071406
+huius modi		had weight: -0.0164814721793
+ego cum		had weight: -0.0165023617446
+sg125 similarWord: remedia		had weight: -0.0165224913508
+Mean Length Relative Clauses		had weight: -0.0165230035782
+ob eam		had weight: -0.0165346171707
+etiam cum		had weight: -0.0165644586086
+autem ex		had weight: -0.0165668409318
+in quibus		had weight: -0.0165947042406
+non possint		had weight: -0.0166397001594
+nihil ex		had weight: -0.0166503936052
+esse quae		had weight: -0.0166635345668
+et quid		had weight: -0.01667849347
+et eum		had weight: -0.0167741309851
+sg12 similarWord: uiscera		had weight: -0.0167850870639
+sg92 similarWord: leve		had weight: -0.0168378334492
+cum illo		had weight: -0.016842186451
+et bene		had weight: -0.0168644823134
+tamen in		had weight: -0.0168661680073
+eius modi		had weight: -0.0168911218643
+ex qua		had weight: -0.0169708970934
+at cum		had weight: -0.017087623477
+qui id		had weight: -0.0171921197325
+non minus		had weight: -0.0171937998384
+enim est		had weight: -0.0172173287719
+vero et		had weight: -0.0172576494515
+qui est		had weight: -0.0172967016697
+non possit		had weight: -0.017393078655
+in ea		had weight: -0.0174466390163
+sed ad		had weight: -0.0174798704684
+pater et		had weight: -0.0175473876297
+non tamen		had weight: -0.0175909548998
+at ille		had weight: -0.0175960212946
+ad caesarem		had weight: -0.0176981780678
+erat ut		had weight: -0.0177810192108
+enim et		had weight: -0.0177956745028
+de ea		had weight: -0.0178340822458
+itaque et		had weight: -0.0178810209036
+simul atque		had weight: -0.0178880393505
+et tua		had weight: -0.0179244242609
+nihil ad		had weight: -0.0179515387863
+prae se		had weight: -0.0179882850498
+quam de		had weight: -0.0180060565472
+est eorum		had weight: -0.0180391650647
+quibus in		had weight: -0.0180486682802
+nisi ex		had weight: -0.0180525798351
+ex hac		had weight: -0.0181317348033
+ad hoc		had weight: -0.0181600898504
+ut neque		had weight: -0.0181873068213
+sed id		had weight: -0.0182909294963
+est eius		had weight: -0.0183069072664
+sunt quod		had weight: -0.0183505862951
+quo me		had weight: -0.0184741187841
+id autem		had weight: -0.0184784252197
+quod illi		had weight: -0.0185230057687
+ac primum		had weight: -0.018541071564
+nisi qui		had weight: -0.0185516122729
+in vita		had weight: -0.0185742452741
+aliquid et		had weight: -0.0186374168843
+ut illi		had weight: -0.0186859276146
+cum omnes		had weight: -0.0187424309552
+se esse		had weight: -0.0188132673502
+at enim		had weight: -0.01887948066
+ut quae		had weight: -0.0189028438181
+eius non		had weight: -0.0189094543457
+sg37 similarWord: casside		had weight: -0.0189100131392
+cum praesertim		had weight: -0.0189581457525
+omnibus in		had weight: -0.0190344471484
+enim in		had weight: -0.0191342439502
+et iam		had weight: -0.0192733034492
+vel in		had weight: -0.0195399969816
+quam ille		had weight: -0.0197672303766
+qui nunc		had weight: -0.0198440849781
+ac non		had weight: -0.0198653377593
+Gerunds and Gerundives		had weight: -0.0199000593275
+et quo		had weight: -0.0199210382998
+aliud est		had weight: -0.0199504978955
+sg186 similarWord: ubi		had weight: -0.019962426275
+non ego		had weight: -0.0199945792556
+etiam quod		had weight: -0.0200004912913
+Relative Clauses		had weight: -0.0200276430696
+ad hanc		had weight: -0.0201657004654
+ut est		had weight: -0.0203086137772
+et una		had weight: -0.0203903559595
+vereor ne		had weight: -0.0204434841871
+ad extremum		had weight: -0.0204759687185
+quid enim		had weight: -0.0204786974937
+sg59 similarWord: orat		had weight: -0.020542697981
+rei publicae		had weight: -0.0205494984984
+ea quae		had weight: -0.0205657966435
+sg65 similarWord: probus		had weight: -0.0206158868968
+cum ab		had weight: -0.0206275694072
+sg84 similarWord: repulsa		had weight: -0.020697530359
+cum illa		had weight: -0.0207140576094
+sg197 similarWord: sacerdos		had weight: -0.020832804963
+ex parte		had weight: -0.0209370907396
+vel cum		had weight: -0.0209853686392
+id fieri		had weight: -0.0209873467684
+is qui		had weight: -0.0209965594113
+et quantum		had weight: -0.0210060235113
+visum est		had weight: -0.0210813172162
+omni genere		had weight: -0.0210912916809
+sg162 similarWord: adulescentulum		had weight: -0.0211683828384
+haec non		had weight: -0.0213750451803
+sg170 similarWord: iucundum		had weight: -0.0213925763965
+nec non		had weight: -0.0215716827661
+quid ad		had weight: -0.0215757209808
+et ab		had weight: -0.0216276310384
+sg18 similarWord: prius		had weight: -0.0217085909098
+hoc ego		had weight: -0.0217173639685
+ac de		had weight: -0.0221440494061
+quam tu		had weight: -0.0222950931638
+sg9 similarWord: incidi		had weight: -0.022851806134
+in corpore		had weight: -0.0231391582638
+sg107 similarWord: probandum		had weight: -0.0232089459896
+ad id quod		had weight: -0.0232459213585
+quoque ut		had weight: -0.0233571957797
+sg55 similarWord: medicina		had weight: -0.0233710315078
+sg71 similarWord: gradu		had weight: -0.0233984719962
+sed ab		had weight: -0.0235047247261
+quidem qui		had weight: -0.0238617639989
+verum est		had weight: -0.0239688083529
+sg183 similarWord: ipsae		had weight: -0.0240303315222
+et nunc		had weight: -0.0240835975856
+Antequam		had weight: -0.0242274105549
+nos autem		had weight: -0.0243685226887
+sibi quisque		had weight: -0.0243715513498
+inter eos		had weight: -0.024383822456
+in dies		had weight: -0.0244217440486
+Ipse		had weight: -0.0246997494251
+magis in		had weight: -0.0249657928944
+et illum		had weight: -0.0252546537668
+in publico		had weight: -0.0252578258514
+Vocatives		had weight: -0.0256934985518
+ob hoc		had weight: -0.0257106050849
+in eam		had weight: -0.0260478705168
+sg138 similarWord: perpetuum		had weight: -0.0261306650937
+sg10 similarWord: centuriis		had weight: -0.0264294408262
+sg25 similarWord: contubernio		had weight: -0.0264526642859
+sg140 similarWord: marvlli		had weight: -0.0266598686576
+sg188 similarWord: rumor		had weight: -0.0267251208425
+ad illam		had weight: -0.0268359165639
+sg4 similarWord: crebrisque		had weight: -0.0269677340984
+iam dudum		had weight: -0.0270797964185
+quod ab		had weight: -0.0271303001791
+sg109 similarWord: occulte		had weight: -0.0274232439697
+in eadem		had weight: -0.0274449363351
+sg97 similarWord: scuto		had weight: -0.027816683054
+sg118 similarWord: mirarer		had weight: -0.0278612729162
+sg189 similarWord: adfectant		had weight: -0.0279708430171
+ex ea		had weight: -0.0280313566327
+Priusquam		had weight: -0.0283463355154
+sg93 similarWord: impleat		had weight: -0.028726555407
+in ipsis		had weight: -0.0289405789226
+sg26 similarWord: urbe		had weight: -0.0292639769614
+Iste		had weight: -0.0293381586671
+sg133 similarWord: thucydides		had weight: -0.0294464044273
+sg199 similarWord: taurus		had weight: -0.0296521857381
+sg193 similarWord: coniunctum		had weight: -0.0296814292669
+sg83 similarWord: nece		had weight: -0.0298167914152
+sg187 similarWord: fretus		had weight: -0.0301111321896
+sg173 similarWord: divisit		had weight: -0.0301595963538
+sg198 similarWord: perscripta		had weight: -0.0305807199329
+Reflexive Pronouns		had weight: -0.03084493801
+Conditionals		had weight: -0.0308683812618
+sg3 similarWord: auro		had weight: -0.0309085082263
+sg103 similarWord: zephyro		had weight: -0.0309329051524
+sed ubi		had weight: -0.0314343459904
+nam de		had weight: -0.032077062875
+sg105 similarWord: concurrunt		had weight: -0.0321233086288
+sg113 similarWord: pondus		had weight: -0.0326592735946
+sg174 similarWord: cogitandum		had weight: -0.0326804183424
+sg16 similarWord: stipite		had weight: -0.0328847803175
+sg40 similarWord: pietas		had weight: -0.0329249538481
+ego te		had weight: -0.0329671539366
+sg132 similarWord: nimium		had weight: -0.0330371893942
+et cetera		had weight: -0.0340689830482
+in mentem		had weight: -0.0345262028277
+sg145 similarWord: grandis		had weight: -0.0350223258138
+sg106 similarWord: arcem		had weight: -0.0372767522931
+sg190 similarWord: etiamtum		had weight: -0.0374500975013
+sg44 similarWord: sumite		had weight: -0.0381413511932
+sg90 similarWord: oculum		had weight: -0.0382598862052
+sg63 similarWord: redeo		had weight: -0.0384250804782
+Demonstrative Pronouns		had weight: -0.0385450832546
+sg24 similarWord: pascat		had weight: -0.0394177287817
+sg169 similarWord: massica		had weight: -0.0398520119488
+sg195 similarWord: neptunum		had weight: -0.0398875847459
+Atque + consonant		had weight: -0.0402467288077
+sg143 similarWord: avidus		had weight: -0.0403579212725
+et contra		had weight: -0.0411083698273
+sg38 similarWord: minutissimis		had weight: -0.042433604598
+sg146 similarWord: qualiscumque		had weight: -0.0425930544734
+illud quoque		had weight: -0.0427830703557
+sg64 similarWord: masculo		had weight: -0.0429911091924
+sg155 similarWord: quas		had weight: -0.0434242449701
+sg180 similarWord: latebris		had weight: -0.0439379103482
+sg104 similarWord: multiplici		had weight: -0.0441797673702
+sg110 similarWord: habiturus		had weight: -0.0447080768645
+sg136 similarWord: mores		had weight: -0.0474238693714
+Interrogative Sentences		had weight: -0.0478476248682
+sg86 similarWord: gaudet		had weight: -0.0479167215526
+sg161 similarWord: angiportum		had weight: -0.0517599098384
+sg89 similarWord: soleo		had weight: -0.053373772651
+sg95 similarWord: verecundis		had weight: -0.0574366599321
