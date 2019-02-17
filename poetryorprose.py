@@ -262,7 +262,7 @@ class TensorflowModel():
 					continue
 				#features.append(row[0:labelCol-1])
 				#features.append(row[0:labelCol-1])
-
+				#print ("row1: " + row[1])
 				features.append(row[1:labelCol-1])
 				#print (row[1])
 				#print ("------")
@@ -420,7 +420,7 @@ class TensorflowModel():
 			f = open(featureRankOutputFile, 'w')
 			for sw in sortedWeights:
 				#print ("featureName: " + str(origTrainFeaturesHeaderList[sw[1]]) + " weight: " + str(sw[0]))
-				res = str(origTrainFeaturesHeaderList[sw[1]]) + "\t\thad weight: " + str(sw[0])
+				res = str(origTrainFeaturesHeaderList[sw[1] + 1]) + "\t\thad weight: " + str(sw[0])
 				print (res)
 				f.write(res + "\n")
 			f.close()
