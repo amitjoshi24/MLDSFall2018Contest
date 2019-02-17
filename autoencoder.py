@@ -19,7 +19,7 @@ email: amit.joshiusa@gmail.com
 '''
 class AutoEncoder():
 	default_lr = 0.000004
-	default_EPOCHS = 7000
+	default_EPOCHS = 5000
 	default_BATCH_SIZE = 469
 	numHiddenLayerNodes = 475
 	numInputLayerNodes = 848

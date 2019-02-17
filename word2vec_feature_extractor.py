@@ -137,8 +137,8 @@ class Word2VecFeatureExtractor():
 			#print (similarWord[0][0])
 			#print ('--------')
 
-			origTrainFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
-			origTestFeaturesHeader += "\"sg" + str(i) + " similarWord: " + similarWord + "\","
+			origTrainFeaturesHeader += "\"similarWord: " + similarWord + "\","
+			origTestFeaturesHeader += "\"similarWord: " + similarWord + "\","
 
 		happinessArray = list()
 		sadnessArray = list()

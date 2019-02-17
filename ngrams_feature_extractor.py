@@ -140,7 +140,7 @@ class NGramsFeatureExtractor():
 		ngramFeatureNames = list()
 		newFeatureNames = tfidf.get_feature_names()
 		for i in range(len(newFeatureNames)):
-			ngramFeatureNames.append(str(newFeatureNames[i]))
+			ngramFeatureNames.append("frequency: " + str(newFeatureNames[i]))
 			#print (str(i) + ": " + ngramFeatureNames[i])
 
 		densed = extraFeatures.todense()
