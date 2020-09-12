@@ -3,6 +3,8 @@ email: amit.joshiusa@gmail.com
 
 Run run.sh to run all programs in order.
 
+My report with explanations: AmitJoshiMLDSFall2018ContestReport.pdf
+
 Explanation of output files:
 
 submission.csv: my submission on kaggle
